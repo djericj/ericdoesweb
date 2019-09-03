@@ -4,7 +4,7 @@ import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import Link from "@material-ui/core/Link";
+import Link from "react-router-dom/Link";
 import Avatar from "@material-ui/core/Avatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import CodeIcon from "@material-ui/icons/Code";
@@ -14,7 +14,6 @@ import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
 import PermPhoneMsgIcon from "@material-ui/icons/PermPhoneMsg";
 import VolumeUpIcon from "@material-ui/icons/VolumeUp";
 import PersonPinIcon from "@material-ui/icons/PersonPin";
-import { Nav } from "mui-layout";
 
 export const MuiNav = () => {
   return (
@@ -30,49 +29,49 @@ export const MuiNav = () => {
         <List>
           <MenuListItem
             icon={<PersonPinIcon />}
-            link="#four"
+            link="/start"
             primary="Start"
             secondary="The beginning is here"
           />
 
           <MenuListItem
             icon={<DescriptionIcon />}
-            link="#four"
+            link="/resume"
             primary="Resume"
             secondary="All the things I know how to do"
           />
 
           <MenuListItem
             icon={<WorkIcon />}
-            link="#four"
+            link="/experience"
             primary="Experience"
             secondary="Places I have worked"
           />
 
           <MenuListItem
             icon={<CodeIcon />}
-            link="#four"
+            link="/portfolio"
             primary="Portfolio"
             secondary="Examples of projects I have done"
           />
 
           <MenuListItem
             icon={<ImportantDevicesIcon />}
-            link="#four"
+            link="/technologies"
             primary="Technologies I Use"
             secondary="C#, JavaScript, Angular, React"
           />
 
           <MenuListItem
             icon={<VolumeUpIcon />}
-            link="#four"
+            link="/audio"
             primary="Audio & Music"
             secondary="I also do audio engineering"
           />
 
           <MenuListItem
             icon={<PermPhoneMsgIcon />}
-            link="#four"
+            link="/contact"
             primary="Contact Me"
             secondary="Email me or find me online"
           />
@@ -89,7 +88,7 @@ const MenuListItem = props => {
       <ListItemAvatar>
         <Avatar>{props.icon}</Avatar>
       </ListItemAvatar>
-      <Link href={props.link}>
+      <Link to={props.link}>
         <ListItemText primary={props.primary} secondary={props.secondary} />
       </Link>
     </ListItem>
