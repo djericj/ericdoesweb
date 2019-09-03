@@ -4,7 +4,7 @@ import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import Link from "react-router-dom/Link";
+import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import CodeIcon from "@material-ui/icons/Code";
@@ -17,7 +17,7 @@ import PersonPinIcon from "@material-ui/icons/PersonPin";
 
 export const MuiNav = () => {
   return (
-    <Drawer variant="persistent" open="true">
+    <Drawer variant="persistent" open={true}>
       <div className="">
         <div className="">
           <h1>

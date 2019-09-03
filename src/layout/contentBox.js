@@ -8,10 +8,10 @@ const ContentBox = props => {
   return (
     <Paper className={props.classes.paper}>
       <Box spacing={2} width={props.width} height={props.height}>
-        <Grid item xs="{1}">
+        <Grid item xs={3}>
           {props.icon}
         </Grid>
-        <Grid item xs="{8}">
+        <Grid item xs={8}>
           <Typography variant="h5">{props.title}</Typography>
         </Grid>
       </Box>
