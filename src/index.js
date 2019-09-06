@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core";
 import { ChevronLeft, ChevronRight } from "@material-ui/icons";
-import { Root, Content, Footer } from "mui-layout";
+import { Root, Content } from "mui-layout";
 import { MuiNav } from "./layout/Nav";
 
 const baseTheme = createMuiTheme();

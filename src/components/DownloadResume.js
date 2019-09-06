@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+import { Button, Typography } from "@material-ui/core";
 import ContentBox from "../layout/contentBox";
-import Typography from "@material-ui/core/Typography";
 import GetAppIcon from "@material-ui/icons/GetApp";
 
 const DownloadResume = props => {

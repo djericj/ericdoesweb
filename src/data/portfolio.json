@@ -1,0 +1,127 @@
+[
+  {
+    "id": "1",
+    "name": "Personal Music Web Site",
+    "url": "http://www.downgrooves.com/",
+    "dates": "Apr 2018 to May 2018",
+    "technologies": "Angular 7, JavaScript, JSON, API, HTML5, CSS",
+    "description": "My personal website with all of my releases, music and DJ mixes.  The site is built completely in Angular 7.  To get releases data, we query the iTunes API directly.  Doing it this way allows us to keep the list of releases fresh without having to actually update any data on the site.  Once a release is published to iTunes, it shows up on the site.  We accomplish this by querying the iTunes API for any releases with the artist name 'Downgrooves'.  The DJ mixes are read from a static JSON file.  The DJ mix data rarely changes, so there is no need to store the data in a relational database.  Pulling this static data from a file instead of a database eliminates the need for any server side code and keeps the site completely static.  A static site can be hosted very cheaply in the cloud.  ",
+    "basePath": "./screenshots/Downgrooves",
+    "screenshots": [
+      { "image": "home.png", "caption": "The front page" },
+      {
+        "image": "tracks.png",
+        "caption": "List of releases on iTunes.  This page pulls the release info directly from the iTunes API."
+      },
+      {
+        "image": "track-list.png",
+        "caption": "Another list of tracks released on iTunes pulled directly from the iTunes API."
+      },
+      {
+        "image": "track-details.png",
+        "caption": "A detail page for one of the releases.  This page pulls the list of tracks directly from the iTunes API."
+      },
+      {
+        "image": "track-details2.png",
+        "caption": "Another detail page for one of the releases, pulled directly from the iTunes API."
+      },
+      {
+        "image": "mixes.png",
+        "caption": "List of DJ mixes.  Since this data changes infrequently, the data is pulled from a static JSON file."
+      },
+      {
+        "image": "mixes2.png",
+        "caption": "Another list of DJ mixes in a different category.  This data comes from a single JSON file."
+      },
+      { "image": "mixes3.png", "caption": "A third list of DJ mixes." },
+      {
+        "image": "mix-detail.png",
+        "caption": "A detail page for one of the DJ mixes.  Pulled from a static JSON file."
+      },
+      {
+        "image": "mix-detail2.png",
+        "caption": "Another detail page for one of the DJ mixes.  Pulled from a static JSON file."
+      },
+      {
+        "image": "shop2.png",
+        "caption": "List of places where my music can be purchased."
+      },
+      {
+        "image": "contact.png",
+        "caption": "A simple contact form to send me email.  Using a contact form instead of just listing an email address allows me to control the input and prevents my personal email from being exposed on the site.  "
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Large Corporate Web Site",
+    "url": "",
+    "dates": "Jan 2011 to Jun 2018",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor, odio fringilla pellentesque laoreet, massa metus vestibulum libero, sed tincidunt enim nulla nec augue. Nam eget rhoncus mi. Etiam pharetra ligula metus, quis facilisis leo ullamcorper a. Cras malesuada at ipsum non sollicitudin. Donec in arcu et erat pharetra fringilla volutpat et est. Vivamus vestibulum maximus tempus. Ut mollis lacinia tellus porttitor congue. Nunc congue, est nec aliquam aliquet, odio purus venenatis sem, at dignissim ligula augue sed odio.",
+    "basePath": "./static/screenshots/Trinity_Consultants",
+    "screenshots": []
+  },
+  {
+    "id": "3",
+    "name": "Education Management Web Site",
+    "url": "",
+    "dates": "Jan 2011 to Jun 2018",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor, odio fringilla pellentesque laoreet, massa metus vestibulum libero, sed tincidunt enim nulla nec augue. Nam eget rhoncus mi. Etiam pharetra ligula metus, quis facilisis leo ullamcorper a. Cras malesuada at ipsum non sollicitudin. Donec in arcu et erat pharetra fringilla volutpat et est. Vivamus vestibulum maximus tempus. Ut mollis lacinia tellus porttitor congue. Nunc congue, est nec aliquam aliquet, odio purus venenatis sem, at dignissim ligula augue sed odio.",
+    "basePath": "./static/screenshots/Trinity_Admin",
+    "screenshots": []
+  },
+  {
+    "id": "4",
+    "name": "Desktop Software Sales Web Site",
+    "url": "",
+    "dates": "Mar 2009 to Jun 2018",
+    "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
+    "basePath": "./static/screenshots/Breeze_Software",
+    "screenshots": []
+  },
+  {
+    "id": "5",
+    "name": "State Government Project Web Site",
+    "url": "",
+    "dates": "Oct 2013 to Mar 2018",
+    "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
+    "basePath": "./static/screenshots/WyVisNet",
+    "screenshots": []
+  },
+  {
+    "id": "6",
+    "name": "Job Web Site",
+    "url": "",
+    "dates": "Nov 2015 to Apr 2016",
+    "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
+    "basePath": "./static/screenshots/Trispyrian",
+    "screenshots": []
+  },
+  {
+    "id": "7",
+    "name": "Occupational Safety Web Site",
+    "url": "",
+    "dates": "Feb 2014 to May 2018",
+    "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
+    "basePath": "",
+    "screenshots": []
+  },
+  {
+    "id": "8",
+    "name": "Air Modeling Data Desktop Application",
+    "url": "",
+    "dates": "Mar 2013 to Sep 2014",
+    "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
+    "basePath": "",
+    "screenshots": []
+  },
+  {
+    "id": "9",
+    "name": "Damage Assessment Desktop Application",
+    "url": "",
+    "dates": "May 2016 to Dec 2016",
+    "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
+    "basePath": "",
+    "screenshots": []
+  }
+]

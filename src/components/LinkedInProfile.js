@@ -1,9 +1,5 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
+import { Grid, Paper, Button, Container, Typography } from "@material-ui/core";
 import { ReactComponent as LinkedInIcon } from "../_ionicons_svg_logo-linkedin.svg";
 
 const LinkedInProfile = props => {

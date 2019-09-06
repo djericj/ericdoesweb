@@ -1,21 +1,36 @@
 import React from "react";
-import Drawer from "@material-ui/core/Drawer";
-import Divider from "@material-ui/core/Divider";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+import {
+  Container,
+  Drawer,
+  Divider,
+  List,
+  ListItem,
+  ListItemAvatar,
+  Avatar,
+  ListItemText,
+  Button,
+  makeStyles
+} from "@material-ui/core";
 import { Link } from "react-router-dom";
-import Avatar from "@material-ui/core/Avatar";
-import ListItemText from "@material-ui/core/ListItemText";
-import CodeIcon from "@material-ui/icons/Code";
-import WorkIcon from "@material-ui/icons/Work";
-import DescriptionIcon from "@material-ui/icons/Description";
-import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
-import PermPhoneMsgIcon from "@material-ui/icons/PermPhoneMsg";
-import VolumeUpIcon from "@material-ui/icons/VolumeUp";
-import PersonPinIcon from "@material-ui/icons/PersonPin";
+import {
+  Code as CodeIcon,
+  Work as WorkIcon,
+  Description as DescriptionIcon,
+  ImportantDevices as ImportantDevicesIcon,
+  PermPhoneMsg as PermPhoneMsgIcon,
+  VolumeUp as VolumeUpIcon,
+  PersonPin as PersonPinIcon
+} from "@material-ui/icons";
+
+const useStyles = makeStyles(theme => ({
+  button: {
+    flexGrow: 1,
+    margin: 15
+  }
+}));
 
 export const MuiNav = () => {
+  const classes = useStyles();
   return (
     <Drawer variant="persistent" open={true}>
       <div className="">
@@ -29,9 +44,9 @@ export const MuiNav = () => {
         <List>
           <MenuListItem
             icon={<PersonPinIcon />}
-            link="/start"
-            primary="Start"
-            secondary="The beginning is here"
+            link="/"
+            primary="About Me"
+            secondary="Where I've been, where I'm going"
           />
 
           <MenuListItem
@@ -77,6 +92,17 @@ export const MuiNav = () => {
           />
         </List>
         <Divider />
+        <Container>
+          <Button
+            href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
+            variant="contained"
+            color="primary"
+            size="small"
+            className={classes.button}
+          >
+            Download my resume (.docx)
+          </Button>
+        </Container>
       </div>
     </Drawer>
   );

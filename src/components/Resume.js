@@ -7,6 +7,7 @@ import Certifications from "./Certifications";
 import ProfessionalSummary from "./ProfessionalSummary";
 import DownloadResume from "./DownloadResume";
 import LinkedInProfile from "./LinkedInProfile";
+import Education from "./Education";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,17 +26,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Resume = () => {
-  const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
   return (
     <Grid container spacing={3}>
-      <Grid item xs={4}>
-        <AboutMe classes={classes} />
-        <TechnicalSkills classes={classes} />
-        <Certifications classes={classes} />
-      </Grid>
       <Grid item xs={8}>
         <ProfessionalSummary classes={classes} />
+
         <Grid container spacing={2}>
           <Grid item xs={6}>
             <LinkedInProfile classes={classes} />
@@ -44,6 +40,10 @@ const Resume = () => {
             <DownloadResume classes={classes} />
           </Grid>
         </Grid>
+      </Grid>
+      <Grid item xs={4}>
+        <TechnicalSkills classes={classes} />
+        <Certifications classes={classes} />
       </Grid>
     </Grid>
   );

@@ -1,7 +1,6 @@
 import React from "react";
-import Chip from "@material-ui/core/Chip";
+import { Chip, Typography } from "@material-ui/core";
 import ComputerIcon from "@material-ui/icons/Computer";
-import Typography from "@material-ui/core/Typography";
 import ContentBox from "../layout/contentBox";
 
 const TechnicalSkills = props => {
@@ -38,7 +37,8 @@ const ChipData = props => {
     { key: 14, label: "HTML5" },
     { key: 15, label: "Microsoft Azure" },
     { key: 16, label: "Azure DevOps" },
-    { key: 17, label: "Git" }
+    { key: 17, label: "Git" },
+    { key: 18, label: "Material Design" }
   ].map(data => {
     let icon;
 

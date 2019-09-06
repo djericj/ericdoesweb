@@ -1,0 +1,157 @@
+[
+  {
+    "title": "Application Developer",
+    "subtitle": "Bank of America, Global Information Security",
+    "environment": "ASP.NET MVC, C#, Angular 7, JavaScript, jQuery, Microsoft SQL, Kafka, Apache SOLR, Git, TFS, Agile",
+    "from": "Jun 2018",
+    "to": "Aug 2019",
+    "image": "",
+    "description": [
+      {
+        "item": "Worked in global information security as a senior software developer and lead developer. "
+      },
+      {
+        "item": "Started as a senior developer on a six-person development team, then moved to a smaller, 3 developer team as a lead developer. "
+      },
+      {
+        "item": "First project was a high visibility application which monitors the banks' servers to ensure security patches are applied and up-to-date and ensuring owners of those applications provide remediation in a timely manner."
+      },
+      {
+        "item": "Second project as a lead developer was an associate lookup site reading data from different employee data servers."
+      },
+      {
+        "item": "Responsibilities on both projects included: completing stories, fixing bugs and providing general architectural advice and guidance."
+      },
+      { "item": "Evaluated and implemented best practices. " },
+      {
+        "item": "Stories ranged from small features and enhancements to large scale features with significant end user and application-wide impact. "
+      }
+    ]
+  },
+  {
+    "title": "Senior Web Developer / Lead Software Architect",
+    "subtitle": "Trinity Consultants, Inc.",
+    "environment": "ASP.NET, C#, MVC, Web Forms, Bootstrap, SOAP, Microsoft SQL, SSRS, TFS, Visual SourceSafe, Ektron CMS, WPF, MVVM",
+    "from": "Mar 2009",
+    "to": "Jun 2018",
+    "image": "",
+    "description": [
+      {
+        "item": "Architected and modernized the entire corporate web presence, consisting of four separate sites for different business lines, 3 of which are e-commerce sites."
+      },
+      {
+        "item": "Developed sites using layered architectures, ASP.NET, C#, MVC, Bootstrap, SOAP, Microsoft SQL and Ektron CMS.  "
+      },
+      {
+        "item": "Designed, architected and built a complete education management system using web forms, with full management of 200+ training courses per year, course registrations, venue management, email notifications, attendance, survey intake/results, multi-layered security system, waiting lists, complex discounting and numerous metrics and analysis reporting built in Microsoft Reporting Services. "
+      },
+      {
+        "item": "Fully architected, built and modernized outside projects for government and international clients using ASP.NET Web Forms, MVC, Microsoft SQL, and reporting services.   "
+      },
+      {
+        "item": "Clients included the State of Wyoming Department of Environmental Quality (WDEQ), Kuwait Institute of Scientific Research (KISR), Air Force Technical Applications Center (AFTAC), and The State Oil Company of Azerbaijan Republic (SOCAR)."
+      },
+      {
+        "item": "Architected a major company upgrade from Visual SourceSafe to Team Foundation Services.  "
+      },
+      {
+        "item": "Established software development lifecycle best practices using TFS and continuous integration for web and desktop applications.  "
+      },
+      {
+        "item": "Worked with WinForms for desktop applications and architected a company-wide transition from WinForms to Windows Presentation Foundation (WPF) using MVVM.  "
+      },
+      {
+        "item": "Modernized a custom WinForms desktop licensing system and companion Web Forms CRM site with SOAP web integration for licensing desktop software."
+      }
+    ]
+  },
+  {
+    "title": "Solutions Developer",
+    "subtitle": "Hewlett-Packard Enterprise (formerly Electronic Data Systems, EDS)",
+    "environment": "C#, .NET, MS SQL Server, SSAS, SSIS, SharePoint",
+    "from": "Nov 2005",
+    "to": "Mar 2009",
+    "image": "",
+    "description": [
+      {
+        "item": "Was responsible for architecting and developing solutions for various internal EDS/HP Business Intelligence applications using mostly Microsoft based technologies."
+      },
+      {
+        "item": "Technologies used included, but are not limited to: Microsoft C# .NET, Microsoft SQL Server, Microsoft Analysis Services, Microsoft Integration Services, Microsoft SharePoint Portal Server, NAnt open source build platform, and IBATIS object-relational mapping tools (O/RM)."
+      }
+    ]
+  },
+  {
+    "title": "Senior Web Developer",
+    "subtitle": "1-800-HOSTING",
+    "environment": "VB.NET, ASP.NET, ASP, Visual Basic, SQL Server, COM, JavaScript",
+    "from": "Sep 2001",
+    "to": "Nov 2005",
+    "image": "",
+    "description": [
+      {
+        "item": "Took care of complete site graphic design, layout, programming and server setup using Visual Basic.NET, ASP.NET, Classic ASP, Visual Basic 6.0 and SQL Server 2000."
+      },
+      {
+        "item": "Projects varied from simple brochure-style sites to web-based order entry systems.  "
+      },
+      {
+        "item": "Worked extensively with stock data and number crunching using custom written SQL stored procedures, COM Objects, VB Applications, JavaScript, ASP.NET and Classic ASP."
+      },
+      {
+        "item": "Also responsible for maintenance of Windows-based Internet Information Services."
+      }
+    ]
+  },
+  {
+    "title": "Web Application Designer & ASP Developer",
+    "subtitle": "IWC, Inc.",
+    "environment": "",
+    "from": "Jul 1999",
+    "to": "Sep 2001",
+    "image": "",
+    "description": [
+      {
+        "item": "Completed site UI design, programming and server setup using Classic ASP, Visual Basic COM objects, SQL Server 2000 and Microsoft Site Server Commerce Edition on multiple sites."
+      },
+      {
+        "item": "Tasks varied from site design and development to Visual Basic programming, computer construction, WAP (PalmPilot) development, and much more."
+      },
+      {
+        "item": "Was responsible for setup and maintenance of production server environment, development and enterprise environment"
+      }
+    ]
+  },
+  {
+    "title": "Senior Web Designer and Network Engineer",
+    "subtitle": "Main Domain, Inc. / 1-800-HOSTING",
+    "environment": "",
+    "from": "Oct 1997",
+    "to": "Jul 1999",
+    "image": "",
+    "description": [
+      {
+        "item": "Provided project management and complete design of web sites, including complete database development in SQL Server, Access and Visual Basic."
+      },
+      { "item": "Graphic Design for both print media and the Web.  " },
+      {
+        "item": "Installation, setup and maintenance of multiple Windows NT and UNIX Servers.  "
+      },
+      {
+        "item": "Technical support and troubleshooting on all servers and web sites."
+      }
+    ]
+  },
+  {
+    "title": "Web Designer and Network Engineer",
+    "subtitle": "Interweb New Media",
+    "environment": "",
+    "from": "Jan 1995",
+    "to": "Oct 1997",
+    "image": "",
+    "description": [
+      { "item": "Project management and complete design of client sites.  " },
+      { "item": "Graphic designer for both print media and the Web." }
+    ]
+  }
+]
