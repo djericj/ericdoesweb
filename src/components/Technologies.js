@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import data from "../data/technologies.json";
 import * as moment from "moment";
-import Masonry from "react-masonry-component";
 
 const masonryOptions = {
   transitionDuration: 0
@@ -24,16 +23,17 @@ class Technologies extends React.Component {
     });
 
     return (
-      <Masonry
-        className={"my-gallery-class"} // default ''
-        elementType={"ul"} // default 'div'
-        options={masonryOptions} // default {}
-        disableImagesLoaded={false} // default false
-        updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-        imagesLoadedOptions={imagesLoadedOptions} // default {}
-      >
-        {childElements}
-      </Masonry>
+      <div></div>
+      // <Masonry
+      //   className={"my-gallery-class"} // default ''
+      //   elementType={"ul"} // default 'div'
+      //   options={masonryOptions} // default {}
+      //   disableImagesLoaded={false} // default false
+      //   updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+      //   imagesLoadedOptions={imagesLoadedOptions} // default {}
+      // >
+      //   {childElements}
+      // </Masonry>
     );
   }
 }

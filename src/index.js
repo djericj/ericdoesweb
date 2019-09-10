@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
@@ -8,7 +12,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core";
 import { ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { Root, Content } from "mui-layout";
-import { MuiNav } from "./layout/Nav";
+import { SideNav } from "./layout/Nav";
 
 const baseTheme = createMuiTheme();
 
@@ -36,14 +40,22 @@ ReactDOM.render(
   <BrowserRouter>
     <ThemeProvider theme={baseTheme}>
       <Root config={defaultConfig}>
-        <MuiNav
-          renderIcon={collapsed =>
-            collapsed ? <ChevronRight /> : <ChevronLeft />
-          }
-        ></MuiNav>
-        <Content>
-          <App />
-        </Content>
+        <div class="wrapper">
+          <nav id="sidebar">
+            <SideNav />
+          </nav>
+          <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Toggle Sidebar</span>
+                </button>
+              </div>
+            </nav>
+            <App />
+          </div>
+        </div>
       </Root>
     </ThemeProvider>
   </BrowserRouter>,

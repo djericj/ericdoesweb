@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Container,
+  Grid,
   Drawer,
   Divider,
   List,
@@ -26,99 +27,121 @@ const useStyles = makeStyles(theme => ({
   button: {
     flexGrow: 1,
     margin: 15
+  },
+  avatar: {
+    margin: 10
+  },
+  bigAvatar: {
+    margin: 10,
+    width: 60,
+    height: 60
   }
 }));
 
-export const MuiNav = () => {
+export const SideNav = () => {
   const classes = useStyles();
   return (
-    <Drawer variant="persistent" open={true}>
-      <div className="">
-        <div className="">
-          <h1>
-            Eric <strong>Rydberg</strong>
-          </h1>
-          <span className="">Software Developer</span>
+    <div className="">
+      <Grid container>
+        <div class="media sidebar-header">
+          <div class="avatar">
+            <Avatar
+              alt="Eric Rydberg"
+              src="/images/0.jpg"
+              className={classes.bigAvatar}
+            />
+          </div>
+          <div class="media-body">
+            <h3 class="mt-0">
+              Eric <strong>Rydberg</strong>
+            </h3>
+            <span class="secondary">Software Developer</span>
+          </div>
         </div>
-        <Divider />
-        <List>
-          <MenuListItem
-            icon={<PersonPinIcon />}
-            link="/"
-            primary="About Me"
-            secondary="Where I've been, where I'm going"
-          />
+      </Grid>
+      <Divider />
+      <List className="list-unstyled components">
+        <MenuListItem
+          icon={<PersonPinIcon />}
+          link="/"
+          primary="About Me"
+          secondary="Where I've been, where I'm going"
+        />
 
-          <MenuListItem
-            icon={<DescriptionIcon />}
-            link="/resume"
-            primary="Resume"
-            secondary="All the things I know how to do"
-          />
+        <MenuListItem
+          icon={<DescriptionIcon />}
+          link="/resume"
+          primary="Resume"
+          secondary="All the things I know how to do"
+        />
 
-          <MenuListItem
-            icon={<WorkIcon />}
-            link="/experience"
-            primary="Experience"
-            secondary="Places I have worked"
-          />
+        <MenuListItem
+          icon={<WorkIcon />}
+          link="/experience"
+          primary="Experience"
+          secondary="Places I have worked"
+        />
 
-          <MenuListItem
-            icon={<CodeIcon />}
-            link="/portfolio"
-            primary="Portfolio"
-            secondary="Examples of projects I have done"
-          />
+        <MenuListItem
+          icon={<CodeIcon />}
+          link="/portfolio"
+          primary="Portfolio"
+          secondary="Examples of projects I have done"
+        />
 
-          <MenuListItem
-            icon={<ImportantDevicesIcon />}
-            link="/technologies"
-            primary="Technologies I Use"
-            secondary="C#, JavaScript, Angular, React"
-          />
+        <MenuListItem
+          icon={<ImportantDevicesIcon />}
+          link="/technologies"
+          primary="Technologies I Use"
+          secondary="C#, JavaScript, Angular, React"
+        />
 
-          <MenuListItem
-            icon={<VolumeUpIcon />}
-            link="/audio"
-            primary="Audio & Music"
-            secondary="I also do audio engineering"
-          />
+        <MenuListItem
+          icon={<VolumeUpIcon />}
+          link="/audio"
+          primary="Audio & Music"
+          secondary="I also do audio engineering"
+        />
 
-          <MenuListItem
-            icon={<PermPhoneMsgIcon />}
-            link="/contact"
-            primary="Contact Me"
-            secondary="Email me or find me online"
-          />
-        </List>
-        <Divider />
-        <Container>
-          <Button
-            href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
-            variant="contained"
-            color="primary"
-            size="small"
-            className={classes.button}
-          >
-            Download my resume (.docx)
-          </Button>
-        </Container>
-      </div>
-    </Drawer>
+        <MenuListItem
+          icon={<PermPhoneMsgIcon />}
+          link="/contact"
+          primary="Contact Me"
+          secondary="Email me or find me online"
+        />
+      </List>
+      <Divider />
+      <Container>
+        <Button
+          href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
+          variant="contained"
+          color="primary"
+          size="small"
+          className={classes.button}
+        >
+          Download my resume (.docx)
+        </Button>
+      </Container>
+    </div>
   );
 };
 
 const MenuListItem = props => {
   return (
-    <ListItem>
-      <ListItemAvatar>
-        <Avatar>{props.icon}</Avatar>
-      </ListItemAvatar>
-      <Link to={props.link}>
-        <ListItemText primary={props.primary} secondary={props.secondary} />
+    <li>
+      <Link to={props.link} activeClassName="active">
+        <div class="media">
+          <div class="avatar">
+            <Avatar>{props.icon}</Avatar>
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">{props.primary}</h5>
+            <span class="secondary">{props.secondary}</span>
+          </div>
+        </div>
       </Link>
-    </ListItem>
+    </li>
   );
 };
 
-export default MuiNav;
+export default SideNav;
