@@ -13,6 +13,7 @@ import { createMuiTheme } from "@material-ui/core";
 import { ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { Root, Content } from "mui-layout";
 import { SideNav } from "./layout/Nav";
+import { NavHeader as Header } from "./layout/Header";
 
 const baseTheme = createMuiTheme();
 
@@ -41,9 +42,10 @@ ReactDOM.render(
     <ThemeProvider theme={baseTheme}>
       <Root config={defaultConfig}>
         <div class="wrapper view">
-          <nav id="sidebar">
+          <Header />
+          {/* <nav id="sidebar">
             <SideNav />
-          </nav>
+          </nav> */}
           <div id="content" class="maskd">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
