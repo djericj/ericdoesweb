@@ -37,28 +37,22 @@ const defaultConfig = {
 };
 
 ReactDOM.render(
-  <BrowserRouter>
-    <ThemeProvider theme={baseTheme}>
-      <Root config={defaultConfig}>
-        <div class="wrapper view">
-          <nav id="sidebar">
-            <SideNav />
-          </nav>
-          <div id="content" class="maskd">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-fluid">
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                  <i class="fas fa-align-left"></i>
-                  <span>Toggle Sidebar</span>
-                </button>
-              </div>
-            </nav>
-            <App />
-          </div>
+  <div class="wrapper view">
+    <nav id="sidebar">
+      <SideNav />
+    </nav>
+    <div id="content" class="maskd">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+          </button>
         </div>
-      </Root>
-    </ThemeProvider>
-  </BrowserRouter>,
+      </nav>
+      <App />
+    </div>
+  </div>,
   document.getElementById("root")
 );
 

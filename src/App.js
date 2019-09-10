@@ -11,15 +11,26 @@ import Contact from "./components/Contact";
 const App = () => {
   return (
     <div>
-      <Switch>
-        <Route exact path="/" component={AboutMe} />
-        <Route exact path="/resume" component={Resume} />
-        <Route exact path="/experience" component={Experience} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/technologies" component={Technologies} />
-        <Route exact path="/audio" component={Audio} />
-        <Route exact path="/contact" component={Contact} />
-      </Switch>
+      <a name="aboutme"></a>
+      <AboutMe />
+
+      <a name="resume"></a>
+      <Resume />
+
+      <a name="experience"></a>
+      <Experience />
+
+      <a name="portfolio"></a>
+      <Portfolio />
+
+      {/* <a name="technologies"></a>
+      <Technologies /> */}
+
+      <a name="audio"></a>
+      <Audio />
+
+      <a name="contact"></a>
+      <Contact />
     </div>
   );
 };

@@ -3,6 +3,15 @@ import Job from "./Job";
 import data from "../data/experience.json";
 
 const Experience = () => {
+  return (
+    <div>
+      <h2>Experience</h2>
+      <Jobs />
+    </div>
+  );
+};
+
+const Jobs = () => {
   return data.map(d => {
     return (
       <Job

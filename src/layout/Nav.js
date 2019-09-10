@@ -66,65 +66,69 @@ export const SideNav = () => {
       <List className="list-unstyled components">
         <MenuListItem
           icon={<PersonPinIcon />}
-          link="/"
+          link="#"
           primary="About Me"
           secondary="Where I've been, where I'm going"
         />
 
         <MenuListItem
           icon={<DescriptionIcon />}
-          link="/resume"
+          link="#resume"
           primary="Resume"
           secondary="All the things I know how to do"
         />
 
         <MenuListItem
           icon={<WorkIcon />}
-          link="/experience"
+          link="#experience"
           primary="Experience"
           secondary="Places I have worked"
         />
 
         <MenuListItem
           icon={<CodeIcon />}
-          link="/portfolio"
+          link="#portfolio"
           primary="Portfolio"
           secondary="Examples of projects I have done"
         />
-
+        {/* 
         <MenuListItem
           icon={<ImportantDevicesIcon />}
-          link="/technologies"
+          link="#technologies"
           primary="Technologies I Use"
           secondary="C#, JavaScript, Angular, React"
-        />
+        /> */}
 
         <MenuListItem
           icon={<VolumeUpIcon />}
-          link="/audio"
+          link="#audio"
           primary="Audio & Music"
           secondary="I also do audio engineering"
         />
 
         <MenuListItem
           icon={<PermPhoneMsgIcon />}
-          link="/contact"
+          link="#contact"
           primary="Contact Me"
           secondary="Email me or find me online"
         />
       </List>
       <Divider />
-      <Container>
-        <Button
-          href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
-          variant="contained"
-          color="primary"
-          size="small"
-          className={classes.button}
-        >
-          Download my resume (.docx)
-        </Button>
-      </Container>
+
+      <nav class="navbar fixed-bottom navbar-dark bg-primary">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </nav>
     </div>
   );
 };
@@ -133,7 +137,7 @@ const MenuListItem = props => {
   const classes = useStyles();
   return (
     <li>
-      <Link to={props.link} activeClassName="active">
+      <a href={props.link}>
         <div class="media">
           <div class="avatar">
             <Avatar className={classes.avatar}>{props.icon}</Avatar>
@@ -143,7 +147,7 @@ const MenuListItem = props => {
             <span class="secondary">{props.secondary}</span>
           </div>
         </div>
-      </Link>
+      </a>
     </li>
   );
 };

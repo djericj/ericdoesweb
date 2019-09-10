@@ -36,6 +36,7 @@ const Portfolio = props => {
 
   return (
     <div className={classes.root}>
+      <h2>Portfolio</h2>
       <GridList className={classes.gridList} cols={2}>
         {data.map(tile => (
           <div key={tile.id}>

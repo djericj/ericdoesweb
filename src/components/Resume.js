@@ -29,24 +29,27 @@ const useStyles = makeStyles(theme => ({
 const Resume = () => {
   const classes = useStyles();
   return (
-    <Grid container spacing={3}>
-      <Grid item xs={8}>
-        <ProfessionalSummary classes={classes} />
+    <div>
+      <h2>Resume</h2>
+      <Grid container spacing={3}>
+        <Grid item xs={8}>
+          <ProfessionalSummary classes={classes} />
 
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <LinkedInProfile classes={classes} />
-          </Grid>
-          <Grid item xs={6}>
-            <GitHub classes={classes} />
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <LinkedInProfile classes={classes} />
+            </Grid>
+            <Grid item xs={6}>
+              <GitHub classes={classes} />
+            </Grid>
           </Grid>
         </Grid>
+        <Grid item xs={4}>
+          <TechnicalSkills classes={classes} />
+          <Certifications classes={classes} />
+        </Grid>
       </Grid>
-      <Grid item xs={4}>
-        <TechnicalSkills classes={classes} />
-        <Certifications classes={classes} />
-      </Grid>
-    </Grid>
+    </div>
   );
 };
 

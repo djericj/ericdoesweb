@@ -23,7 +23,9 @@ class Technologies extends React.Component {
     });
 
     return (
-      <div></div>
+      <div>
+        <h2>Technologies</h2>
+      </div>
       // <Masonry
       //   className={"my-gallery-class"} // default ''
       //   elementType={"ul"} // default 'div'

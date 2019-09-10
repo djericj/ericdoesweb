@@ -21,6 +21,9 @@
   background-color: #4059a4;
   color: #fff;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -33,26 +36,8 @@ body {
 }
 
 #content {
-  background-color: rgba(156, 39, 176, 0.3);
-  background: url("https://mdbootstrap.com/img/Photos/Others/img%20(40).jpg")
-    no-repeat center center;
-  background-size: cover;
-  color: #fff;
-}
-
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.bg-image,
-.bg-slideshow {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
+  margin-left: 350px;
+  padding: 20px;
 }
 
 code {
@@ -71,12 +56,14 @@ code {
 }
 
 #sidebar {
-  min-width: 350px;
+  position: fixed;
+  width: 350px;
   max-width: 350px;
-  min-height: 100vh;
+  height: 100vh;
   background: #7386d5;
   color: #fff;
   transition: all 0.3s;
+  font-size: 0.9em;
 }
 
 #sidebar.active {
@@ -112,7 +99,7 @@ a:focus {
 }
 
 #sidebar .media {
-  padding: 10px 0;
+  padding: 4px 0;
 }
 
 #sidebar .avatar {
@@ -142,7 +129,6 @@ a:focus {
 }
 
 #sidebar ul.components {
-  padding: 20px 0;
   border-bottom: 1px solid #47748b;
 }
 
