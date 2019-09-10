@@ -40,11 +40,11 @@ ReactDOM.render(
   <BrowserRouter>
     <ThemeProvider theme={baseTheme}>
       <Root config={defaultConfig}>
-        <div class="wrapper">
+        <div class="wrapper view">
           <nav id="sidebar">
             <SideNav />
           </nav>
-          <div id="content">
+          <div id="content" class="maskd">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
                 <button type="button" id="sidebarCollapse" class="btn btn-info">

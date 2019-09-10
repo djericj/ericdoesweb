@@ -22,6 +22,7 @@ import {
   VolumeUp as VolumeUpIcon,
   PersonPin as PersonPinIcon
 } from "@material-ui/icons";
+import { deepPurple } from "@material-ui/core/colors";
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -29,7 +30,9 @@ const useStyles = makeStyles(theme => ({
     margin: 15
   },
   avatar: {
-    margin: 10
+    margin: 10,
+    backgroundColor: "#fff",
+    color: "#4159a3"
   },
   bigAvatar: {
     margin: 10,
@@ -55,7 +58,7 @@ export const SideNav = () => {
             <h3 class="mt-0">
               Eric <strong>Rydberg</strong>
             </h3>
-            <span class="secondary">Software Developer</span>
+            <span class="secondary">Web Developer</span>
           </div>
         </div>
       </Grid>
@@ -127,12 +130,13 @@ export const SideNav = () => {
 };
 
 const MenuListItem = props => {
+  const classes = useStyles();
   return (
     <li>
       <Link to={props.link} activeClassName="active">
         <div class="media">
           <div class="avatar">
-            <Avatar>{props.icon}</Avatar>
+            <Avatar className={classes.avatar}>{props.icon}</Avatar>
           </div>
           <div class="media-body">
             <h5 class="mt-0">{props.primary}</h5>

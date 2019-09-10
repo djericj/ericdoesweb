@@ -30,18 +30,22 @@ techniques and change them into clear and actionable strategies.`;
 const AboutMe = props => {
   const classes = useStyles();
   return (
+    // <div>
+    //   <ContentBox
+    //     classes={classes}
+    //     title={
+    //       <Typography>
+    //         <strong>About</strong> Me
+    //       </Typography>
+    //     }
+    //     content={aboutMe}
+    //     icon={<CommentIcon fontSize="large" />}
+    //   />
+    //   <Education classes={classes} />
+    // </div>
     <div>
-      <ContentBox
-        classes={classes}
-        title={
-          <Typography>
-            <strong>About</strong> Me
-          </Typography>
-        }
-        content={aboutMe}
-        icon={<CommentIcon fontSize="large" />}
-      />
-      <Education classes={classes} />
+      <h2>About Me</h2>
+      <p>{aboutMe}</p>
     </div>
   );
 };
