@@ -8,6 +8,7 @@ import ProfessionalSummary from "./ProfessionalSummary";
 import DownloadResume from "./DownloadResume";
 import LinkedInProfile from "./LinkedInProfile";
 import Education from "./Education";
+import GitHub from "./GitHub";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -37,7 +38,7 @@ const Resume = () => {
             <LinkedInProfile classes={classes} />
           </Grid>
           <Grid item xs={6}>
-            <DownloadResume classes={classes} />
+            <GitHub classes={classes} />
           </Grid>
         </Grid>
       </Grid>

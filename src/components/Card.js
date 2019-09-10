@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Card,
   CardHeader,
   CardMedia,
   CardContent,
@@ -8,7 +7,7 @@ import {
 } from "@material-ui/core";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
-const Card = props => {
+const CustomCard = props => {
   return (
     <CardCore className={props.classes.card}>
       <CardHeader
@@ -29,4 +28,4 @@ const Card = props => {
   );
 };
 
-export default Card;
+export default CustomCard;
