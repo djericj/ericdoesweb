@@ -124,7 +124,7 @@ const ResponsibilitiesPanel = props => {
       <ExpansionPanelDetails>
         <ul>
           {props.description.map(data => {
-            return <li>{data.item}</li>;
+            return <li key={data.item}>{data.item}</li>;
           })}
         </ul>
       </ExpansionPanelDetails>

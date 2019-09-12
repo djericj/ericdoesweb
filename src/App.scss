@@ -1,0 +1,199 @@
+@import "./_variables.scss";
+@import "../scss/timeline.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#sidebar {
+  background-color: $primary-color;
+  flex-direction: column;
+
+  justify-content: center;
+  font-size: calc(8px + 1vmin);
+  color: $dark-text;
+  position: fixed;
+  width: 250px;
+  max-width: 250px;
+  height: 100vh;
+  transition: all 0.3s;
+}
+
+a {
+  color: $primary-light;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $light-text;
+  font-size: 12px;
+  /* //background-color: #e1e2e1; */
+}
+
+#content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-content: stretch;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+#sidebar.active {
+  margin-left: -350px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: $light-text;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  background: $primary-dark;
+  color: $light-text;
+  transition: all 0.3s;
+}
+
+#sidebar a {
+  color: $light-text;
+  /* padding: 5px 20px; */
+}
+
+#sidebar .profilepic {
+  padding: 5px 10px;
+}
+
+#sidebar .secondary {
+  font-size: 0.9em;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: $primary-light;
+  width: 100%;
+  text-align: right;
+}
+
+#sidebar .nav-item {
+  text-align: right;
+}
+
+/* #sidebar .sidebar-header .media-body {
+  padding: 8px 10px;
+} */
+
+#sidebar h5 {
+  font-weight: 400;
+}
+
+#sidebar ul.components {
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: $light-text;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: $primary-color;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: $light-text;
+  background: $primary-color;
+}
+
+#sidebar .social-media {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: $primary-color;
+}
+
+.card-image:hover > .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.card-image:hover .icon {
+  visibility: visible;
+}
+
+.icon > i {
+  color: $primary-light;
+  padding: 10px 0;
+}
+
+.icon > svg {
+  color: $primary-light;
+
+  height: 2em;
+  width: 2em;
+}
+
+.row.padding-lg > [class*=" col"] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+}

@@ -7,6 +7,7 @@
     "technologies": "Angular 7, JavaScript, JSON, API, HTML5, CSS",
     "description": "My personal website with all of my releases, music and DJ mixes.  The site is built completely in Angular 7.  To get releases data, we query the iTunes API directly.  Doing it this way allows us to keep the list of releases fresh without having to actually update any data on the site.  Once a release is published to iTunes, it shows up on the site.  We accomplish this by querying the iTunes API for any releases with the artist name 'Downgrooves'.  The DJ mixes are read from a static JSON file.  The DJ mix data rarely changes, so there is no need to store the data in a relational database.  Pulling this static data from a file instead of a database eliminates the need for any server side code and keeps the site completely static.  A static site can be hosted very cheaply in the cloud.  ",
     "basePath": "./screenshots/Downgrooves",
+    "preview": "preview.png",
     "screenshots": [
       { "image": "home.png", "caption": "The front page" },
       {
@@ -58,7 +59,8 @@
     "url": "",
     "dates": "Jan 2011 to Jun 2018",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor, odio fringilla pellentesque laoreet, massa metus vestibulum libero, sed tincidunt enim nulla nec augue. Nam eget rhoncus mi. Etiam pharetra ligula metus, quis facilisis leo ullamcorper a. Cras malesuada at ipsum non sollicitudin. Donec in arcu et erat pharetra fringilla volutpat et est. Vivamus vestibulum maximus tempus. Ut mollis lacinia tellus porttitor congue. Nunc congue, est nec aliquam aliquet, odio purus venenatis sem, at dignissim ligula augue sed odio.",
-    "basePath": "./static/screenshots/Trinity_Consultants",
+    "basePath": "./screenshots/Trinity_Consultants",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -67,7 +69,8 @@
     "url": "",
     "dates": "Jan 2011 to Jun 2018",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor, odio fringilla pellentesque laoreet, massa metus vestibulum libero, sed tincidunt enim nulla nec augue. Nam eget rhoncus mi. Etiam pharetra ligula metus, quis facilisis leo ullamcorper a. Cras malesuada at ipsum non sollicitudin. Donec in arcu et erat pharetra fringilla volutpat et est. Vivamus vestibulum maximus tempus. Ut mollis lacinia tellus porttitor congue. Nunc congue, est nec aliquam aliquet, odio purus venenatis sem, at dignissim ligula augue sed odio.",
-    "basePath": "./static/screenshots/Trinity_Admin",
+    "basePath": "./screenshots/Trinity_Admin",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -76,7 +79,8 @@
     "url": "",
     "dates": "Mar 2009 to Jun 2018",
     "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
-    "basePath": "./static/screenshots/Breeze_Software",
+    "basePath": "./screenshots/Breeze_Software",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -85,7 +89,8 @@
     "url": "",
     "dates": "Oct 2013 to Mar 2018",
     "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
-    "basePath": "./static/screenshots/WyVisNet",
+    "basePath": "./screenshots/WyVisNet",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -94,7 +99,8 @@
     "url": "",
     "dates": "Nov 2015 to Apr 2016",
     "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
-    "basePath": "./static/screenshots/Trispyrian",
+    "basePath": "./screenshots/Trispyrian",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -103,7 +109,8 @@
     "url": "",
     "dates": "Feb 2014 to May 2018",
     "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
-    "basePath": "",
+    "basePath": "./screenshots/SafeBridge",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -112,7 +119,8 @@
     "url": "",
     "dates": "Mar 2013 to Sep 2014",
     "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
-    "basePath": "",
+    "basePath": "./screenshots/AERMET",
+    "preview": "preview.png",
     "screenshots": []
   },
   {
@@ -121,7 +129,8 @@
     "url": "",
     "dates": "May 2016 to Dec 2016",
     "description": "Nulla sagittis lobortis porta. Morbi rutrum, ligula sit amet mollis rutrum, enim nisi viverra nisl, quis vulputate nisl nibh ut lorem. Suspendisse hendrerit et justo vitae pharetra. Proin ultrices nibh eu lacus dignissim elementum. Nullam malesuada convallis libero, in finibus ex aliquet nec. Sed tempor augue quis dictum elementum. Pellentesque consectetur tempus ex, quis eleifend mi. Integer pharetra justo quam, imperdiet laoreet risus congue euismod.",
-    "basePath": "",
+    "basePath": "./screenshots/VASDIP",
+    "preview": "preview.png",
     "screenshots": []
   }
 ]

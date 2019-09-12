@@ -1,87 +1,67 @@
 import React from "react";
-import ContentBox from "../layout/contentBox";
-import Typography from "@material-ui/core/Typography";
-import MouseIcon from "@material-ui/icons/Mouse";
 
 const Items = [
   {
     key: 0,
-    item:
-      "Full stack web development and solution architecture using C#, ASP.NET WebForms and MVC, Razor, Bootstrap, JavaScript, JQuery.   Experience with Angular up to version 7."
+    item: "Full stack web development",
+    icon: "fa fa-th-list fa-2x pull-left"
   },
   {
     key: 1,
-    item:
-      "Experience building a wide variety of web applications, from public facing sites to internal management applications."
+    item: "Object oriented programming.",
+    icon: "fa fa-object-ungroup fa-2x pull-left"
   },
   {
     key: 2,
-    item:
-      "Experience designing and managing server architectures to support web applications, both on-premises and on Azure App Services."
+    item: "Data modeling and database design.",
+    icon: "fa fa-database fa-2x pull-left"
   },
   {
     key: 3,
-    item:
-      "Software Development Life Cycle, Continuous Integration and Deployment on TFS 2017 and Azure DevOps"
-  },
-  { key: 4, item: "Object oriented programming." },
-  {
-    key: 5,
-    item:
-      "Data modeling and database design for both relational and star schema databases."
+    item: "N-Tier Solution Architecture.",
+    icon: "fa fa-building-o fa-2x pull-left"
   },
   {
-    key: 6,
-    item:
-      "Object Relational Mapping (ORM) frameworks including iBatis.NET and some Entity Framework."
-  },
-  { key: 7, item: "N-Tier Solution Architecture." },
-  { key: 8, item: "Git and Team Foundation Version Control" },
-  {
-    key: 9,
-    item:
-      "Service Oriented Architecture using both XML and JSON in SOAP, WCF, Web API, REST API.  "
-  },
-  {
-    key: 10,
-    item:
-      "Microsoft SQL Database development & maintenance, both on-premises and Azure SQL Databases."
-  },
-  {
-    key: 11,
-    item: "Microsoft Reporting Services report development and design."
-  },
-  { key: 12, item: ".NET Best Practices and Standards." },
-  { key: 13, item: "Agile software development" },
-  { key: 14, item: "Desktop development with WPF, WinForms and WiX Toolset." }
+    key: 4,
+    item: " Microsoft Azure Cloud.",
+    icon: "fa fa-cloud fa-2x pull-left"
+  }
 ];
 
-const ProfessionalSummary = props => {
+const ProfessionalSummary = () => {
   return (
-    <ContentBox
-      classes={props.classes}
-      title={
-        <Typography>
-          <strong>Professional</strong> Summary
-        </Typography>
-      }
-      content={<ItemsArrayList />}
-      icon={<MouseIcon fontSize="large" />}
-    />
+    <div class="resume-box">
+      <span class="icon">
+        <i class="fa fa-book fa-3x"></i>
+      </span>
+      <h4>
+        <strong>Professional</strong> Summary
+      </h4>
+
+      <p>
+        <ItemsArrayList />
+      </p>
+    </div>
   );
 };
 
 const ItemsArrayList = () => {
   return (
-    <ul>
+    <div class="">
       <ItemsArray />
-    </ul>
+    </div>
   );
 };
 
 const ItemsArray = () => {
   return Items.map(data => {
-    return <li key={data.key}>{data.item}</li>;
+    return (
+      <span>
+        <i class={data.icon}></i>
+        <p key={data.key}>{data.item}</p>
+        <p class="border-bottom border-secondary"></p>
+      </span>
+    );
   });
 };
 

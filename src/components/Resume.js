@@ -1,14 +1,8 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import AboutMe from "./AboutMe";
 import TechnicalSkills from "./TechnicalSkills";
-import Certifications from "./Certifications";
 import ProfessionalSummary from "./ProfessionalSummary";
-import DownloadResume from "./DownloadResume";
-import LinkedInProfile from "./LinkedInProfile";
-import Education from "./Education";
-import GitHub from "./GitHub";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,27 +22,18 @@ const useStyles = makeStyles(theme => ({
 
 const Resume = () => {
   const classes = useStyles();
-  return (
-    <div>
-      <h2>Resume</h2>
-      <Grid container spacing={3}>
-        <Grid item xs={8}>
-          <ProfessionalSummary classes={classes} />
 
-          <Grid container spacing={2}>
-            <Grid item xs={6}>
-              <LinkedInProfile classes={classes} />
-            </Grid>
-            <Grid item xs={6}>
-              <GitHub classes={classes} />
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={4}>
-          <TechnicalSkills classes={classes} />
-          <Certifications classes={classes} />
-        </Grid>
-      </Grid>
+  return (
+    <div class="row padding-lg">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <AboutMe />
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ProfessionalSummary />
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <TechnicalSkills classes={classes} />
+      </div>
     </div>
   );
 };

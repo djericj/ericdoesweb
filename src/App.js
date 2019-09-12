@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import "./App.scss";
 import Resume from "./components/Resume";
 import Experience from "./components/Experience";
 import AboutMe from "./components/AboutMe";
@@ -10,27 +10,35 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div>
-      <a name="aboutme"></a>
-      <AboutMe />
-
-      <a name="resume"></a>
-      <Resume />
-
-      <a name="experience"></a>
-      <Experience />
-
-      <a name="portfolio"></a>
-      <Portfolio />
-
+    <div class="container-fluid">
+      {/* <a name="aboutme"></a>
+      <section class="dark">
+        <AboutMe />
+      </section> */}
+      <section class="mb-5">
+        <a name="resume"></a>
+        <h2>Resume</h2>
+        <Resume />
+      </section>
+      <section class="mb-5">
+        <h2>Experience</h2>
+        <a name="experience"></a>
+        <Experience />
+      </section>
+      <section class="mb-5">
+        <a name="portfolio"></a>
+        <Portfolio />
+      </section>
       {/* <a name="technologies"></a>
       <Technologies /> */}
-
-      <a name="audio"></a>
-      <Audio />
-
-      <a name="contact"></a>
-      <Contact />
+      <section class="mb-5">
+        <a name="audio"></a>
+        <Audio />
+      </section>
+      <section class="mb-5">
+        <a name="contact"></a>
+        <Contact />
+      </section>
     </div>
   );
 };

@@ -37,16 +37,33 @@ const Portfolio = props => {
   return (
     <div className={classes.root}>
       <h2>Portfolio</h2>
-      <GridList className={classes.gridList} cols={2}>
+      <div className="row">
         {data.map(tile => (
-          <div key={tile.id}>
-            <Typography>{tile.name}</Typography>
+          <div key={tile.id} className="col-6">
+            <div className="card">
+              <div className="card-image">
+                <div className="overlay">
+                  <a href="#" class="icon" title="User Profile">
+                    <i class="fa fa-user"></i>
+                  </a>
+                </div>
+                <img
+                  src={tile.basePath + "/" + tile.preview}
+                  className="card-img-top"
+                  alt="..."
+                />
+              </div>
+
+              <div className="card-body">
+                <p className="card-text">{tile.name}</p>
+              </div>
+            </div>
             <button type="button" onClick={() => handleOpen(tile.id)}>
               Open Modal
             </button>
           </div>
         ))}
-      </GridList>
+      </div>
       <Modal
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
@@ -64,15 +81,6 @@ const Portfolio = props => {
   );
 };
 
-const useStyles = makeStyles(theme => ({
-  paper: {
-    position: "absolute",
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3)
-  }
-}));
+const useStyles = makeStyles(theme => ({}));
 
 export default Portfolio;
