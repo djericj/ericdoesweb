@@ -1,31 +1,29 @@
 import React from "react";
-import {
-  CardHeader,
-  CardMedia,
-  CardContent,
-  IconButton
-} from "@material-ui/core";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 
-const CustomCard = props => {
+const Card = props => {
   return (
-    <CardCore className={props.classes.card}>
-      <CardHeader
-        avatar={props.avatar}
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title={props.title}
-        subheader={props.subheader}
+    <div className="card">
+      <img
+        src={props.tile.basePath + "/" + props.tile.preview}
+        className="card-img-top"
+        alt="..."
       />
-      <CardMedia className={props.classes.media} title={props.alt}>
-        <img src={props.image} />
-      </CardMedia>
-      <CardContent>{props.content}</CardContent>
-    </CardCore>
+      <div className="card-body">
+        <h5 className="card-title text-dark">{props.tile.name}</h5>
+        <p className="card-text text-dark">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <button
+          data-project={props.tile.id}
+          className="btn btn-primary stretched-link"
+          onClick={props.toggleShow.bind(this, props.tile.id)}
+        >
+          More screenshots
+        </button>
+      </div>
+    </div>
   );
 };
 
-export default CustomCard;
+export default Card;

@@ -11,14 +11,14 @@ techniques and change them into clear and actionable strategies.`;
 
 const AboutMe = props => {
   return (
-    <div class="resume-box">
-      <span class="icon">
-        <i class="fa fa-commenting fa-3x"></i>
+    <div className="resume-box">
+      <span className="icon">
+        <i className="fa fa-commenting fa-3x"></i>
       </span>
       <h4>
         <strong>About</strong> Me
       </h4>
-      <p class="lead">{aboutMeLead}</p>
+      <p className="lead">{aboutMeLead}</p>
       <p>{aboutMe}</p>
     </div>
   );

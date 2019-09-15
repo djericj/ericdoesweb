@@ -24,14 +24,14 @@ const Resume = () => {
   const classes = useStyles();
 
   return (
-    <div class="row padding-lg">
-      <div class="col-md-4 col-sm-6 col-xs-12">
+    <div className="row padding-lg">
+      <div className="col-md-4 col-sm-6 col-xs-12">
         <AboutMe />
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
+      <div className="col-md-4 col-sm-6 col-xs-12">
         <ProfessionalSummary />
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
+      <div className="col-md-4 col-sm-6 col-xs-12">
         <TechnicalSkills classes={classes} />
       </div>
     </div>

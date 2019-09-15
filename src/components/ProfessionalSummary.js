@@ -30,24 +30,24 @@ const Items = [
 
 const ProfessionalSummary = () => {
   return (
-    <div class="resume-box">
-      <span class="icon">
-        <i class="fa fa-book fa-3x"></i>
+    <div className="resume-box">
+      <span className="icon">
+        <i className="fa fa-book fa-3x"></i>
       </span>
       <h4>
         <strong>Professional</strong> Summary
       </h4>
 
-      <p>
+      <div>
         <ItemsArrayList />
-      </p>
+      </div>
     </div>
   );
 };
 
 const ItemsArrayList = () => {
   return (
-    <div class="">
+    <div className="">
       <ItemsArray />
     </div>
   );
@@ -56,10 +56,10 @@ const ItemsArrayList = () => {
 const ItemsArray = () => {
   return Items.map(data => {
     return (
-      <span>
-        <i class={data.icon}></i>
+      <span key={data.key}>
+        <i className={data.icon}></i>
         <p key={data.key}>{data.item}</p>
-        <p class="border-bottom border-secondary"></p>
+        <p className="border-bottom border-secondary"></p>
       </span>
     );
   });

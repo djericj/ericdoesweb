@@ -5,16 +5,16 @@ import ContentBox from "../layout/contentBox";
 
 const TechnicalSkills = props => {
   return (
-    <div class="resume-box">
-      <span class="icon">
-        <i class="fa fa-laptop fa-3x"></i>
+    <div className="resume-box">
+      <span className="icon">
+        <i className="fa fa-laptop fa-3x"></i>
       </span>
       <h4>
         <strong>Technical</strong> Skills
       </h4>
-      <p>
+      <div>
         <ChipData classes={props.classes} />
-      </p>
+      </div>
     </div>
   );
 };

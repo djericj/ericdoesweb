@@ -49,7 +49,6 @@ export const SideNav = () => {
       <Divider />
       <ul className="nav flex-column">
         <MenuListItem
-          icon={<i class="fas fa-user fa-lg nav-icon"></i>}
           link="#"
           primary="About Me"
           secondary="Where I've been, where I'm going"
@@ -57,7 +56,6 @@ export const SideNav = () => {
         <Divider />
 
         <MenuListItem
-          icon={<i class="fas fa-file-alt fa-lg nav-icon"></i>}
           link="#resume"
           primary="Resume"
           secondary="All the things I know how to do"
@@ -65,7 +63,6 @@ export const SideNav = () => {
         <Divider />
 
         <MenuListItem
-          icon={<i class="fas fa-briefcase fa-lg nav-icon"></i>}
           link="#experience"
           primary="Experience"
           secondary="Places I have worked"
@@ -73,7 +70,6 @@ export const SideNav = () => {
         <Divider />
 
         <MenuListItem
-          icon={<i class="fas fa-code fa-lg nav-icon"></i>}
           link="#portfolio"
           primary="Portfolio"
           secondary="Examples of projects I have done"
@@ -88,14 +84,12 @@ export const SideNav = () => {
         /> */}
 
         <MenuListItem
-          icon={<i class="fas fa-headphones fa-lg nav-icon"></i>}
           link="#audio"
           primary="Audio & Music"
           secondary="I also do audio engineering"
         />
         <Divider />
         <MenuListItem
-          icon={<i class="fas fa-envelope-open fa-lg nav-icon"></i>}
           link="#contact"
           primary="Contact Me"
           secondary="Email me or find me online"
@@ -103,43 +97,43 @@ export const SideNav = () => {
       </ul>
       <Divider />
 
-      <div class="social-media">
+      <div className="social-media">
         <Divider />
-        <ul class="nav margin-t-10 justify-content-center">
-          <li class="nav-item">
+        <ul className="nav margin-t-10 justify-content-center">
+          <li className="nav-item">
             <a
               href="https://www.linkedin.com/in/eric-rydberg-6657043/"
               target="_new"
-              class="nav-link"
+              className="nav-link"
               title="My profile on Linked In"
               data-toggle="tooltip"
               data-placement="top"
             >
-              <i class="fa fa-linkedin"></i>
+              <i className="fa fa-linkedin"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <a
               href="https://github.com/djericj"
               target="_new"
-              class="nav-link"
+              className="nav-link"
               title="My open source code on GitHub"
               data-toggle="tooltip"
               data-placement="top"
             >
-              <i class="fa fa-github"></i>
+              <i className="fa fa-github"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <a
               href="https://stackoverflow.com/users/10255368/eric-j"
               target="_new"
-              class="nav-link"
+              className="nav-link"
               title="My community contributions on Stack Overflow"
               data-toggle="tooltip"
               data-placement="top"
             >
-              <i class="fa fa-stack-overflow"></i>
+              <i className="fa fa-stack-overflow"></i>
             </a>
           </li>
         </ul>
