@@ -7,6 +7,7 @@ import {
   Avatar,
   makeStyles
 } from "@material-ui/core";
+import Scrollspy from "react-scrollspy";
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -47,54 +48,31 @@ export const SideNav = () => {
         </div>
       </Grid>
       <Divider />
-      <ul className="nav flex-column">
-        <MenuListItem
-          link="#"
-          primary="About Me"
-          secondary="Where I've been, where I'm going"
-        />
-        <Divider />
 
-        <MenuListItem
-          link="#resume"
-          primary="Resume"
-          secondary="All the things I know how to do"
-        />
-        <Divider />
+      <div id="nav-menu" className="nav flex-column list-group">
+        <a
+          href="#aboutme"
+          className="list-group-item list-group-item-action active"
+        >
+          About Me
+        </a>
+        <a href="#resume" className="list-group-item list-group-item-action">
+          Resume
+        </a>
+        <a
+          href="#experience"
+          className="list-group-item list-group-item-action"
+        >
+          Experience
+        </a>
+        <a href="#portfolio" className="list-group-item list-group-item-action">
+          Portfolio
+        </a>
+        <a href="#contact" className="list-group-item list-group-item-action">
+          Contact Me
+        </a>
+      </div>
 
-        <MenuListItem
-          link="#experience"
-          primary="Experience"
-          secondary="Places I have worked"
-        />
-        <Divider />
-
-        <MenuListItem
-          link="#portfolio"
-          primary="Portfolio"
-          secondary="Examples of projects I have done"
-        />
-        <Divider />
-        {/* 
-        <MenuListItem
-          icon={<ImportantDevicesIcon />}
-          link="#technologies"
-          primary="Technologies I Use"
-          secondary="C#, JavaScript, Angular, React"
-        /> */}
-
-        <MenuListItem
-          link="#audio"
-          primary="Audio & Music"
-          secondary="I also do audio engineering"
-        />
-        <Divider />
-        <MenuListItem
-          link="#contact"
-          primary="Contact Me"
-          secondary="Email me or find me online"
-        />
-      </ul>
       <Divider />
 
       <div className="social-media">
@@ -156,7 +134,7 @@ export const SideNav = () => {
 const MenuListItem = props => {
   const classes = useStyles();
   return (
-    <li className="nav-item">
+    <li className="nav-item border-bottom">
       <a href={props.link} className="nav-link">
         {/* {props.icon}  */}
         {props.primary}

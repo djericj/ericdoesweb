@@ -1,5 +1,52 @@
 import React from "react";
 import data from "../data/portfolio.json";
+import { ErrorBoundary } from "./ErrorBoundary.js";
+
+var thumbnailStyle = {
+  overflow: "hidden",
+  width: "96%",
+  margin: "0 auto",
+  height: "120px"
+};
+
+const Thumbnails = props => {
+  //if (!tile.screenshots) return <div></div>;
+  try {
+    return (
+      <div>
+        <ol
+          className="list-unstyled d-flex flex-row bd-highlight mb-3 carousel-indicators"
+          style={thumbnailStyle}
+        >
+          {props.tile.screenshots.map((thumb, index) => {
+            var cls = index === 0 ? "active" : "";
+            index++;
+            return (
+              <li
+                key={thumb.id}
+                className="p-2 bd-highlight"
+                data-target={`carousel-${index}`}
+                data-slide-to={index}
+                className={cls}
+              >
+                <div className="thumbnail border border-primary">
+                  <img
+                    src={props.tile.basePath + "/" + thumb.image}
+                    className="d-block roundedg"
+                    alt="..."
+                  />
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    );
+  } catch (error) {
+    console.log(error);
+    return <h1>{error}</h1>;
+  }
+};
 
 export class Modal extends React.Component {
   render() {
@@ -9,99 +56,88 @@ export class Modal extends React.Component {
     var tile = data.find(x => {
       return x.id === this.props.state.projectId;
     });
-    console.log(tile);
     return (
       <span>
-        <div className="modal display-block">
-          <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalLabel">
-              {tile.name}
-            </h5>
-            <button
-              type="button"
-              className="close"
-              aria-label="Close"
-              onClick={this.props.toggleShow.bind(this, 0)}
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div className="modal-body">
-            <p>{tile.description}</p>
-            <div class="bd-example">
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide"
-                data-ride="carousel"
+        <ErrorBoundary>
+          <div className="modal display-block">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                {tile.name}
+              </h5>
+              <button
+                type="button"
+                className="close"
+                aria-label="Close"
+                onClick={this.props.toggleShow.bind(this, 0)}
               >
-                <ol class="carousel-indicators">
-                  {tile.screenshots.map(function(ss, index) {
-                    var cls = index === 0 ? "active" : "";
-                    return (
-                      <li
-                        data-target={"carousel=" + { index }}
-                        data-slide-to={index}
-                        class={cls}
-                      ></li>
-                    );
-                  })}
-                </ol>
-                <div class="carousel-inner">
-                  {tile.screenshots.map(function(ss, index) {
-                    var cls =
-                      index === 0 ? "carousel-item active" : "carousel-item";
-                    return (
-                      <div class={cls}>
-                        <img
-                          src={tile.basePath + "/" + ss.image}
-                          class="d-block w-100"
-                          alt="..."
-                        />
-                        <div class="carousel-caption d-none d-md-block">
-                          {/* <h5>First slide label</h5> */}
-                          <p>{ss.caption}</p>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <div className="bd-example">
+                <div
+                  id="carouselExampleCaptions"
+                  className="carousel slide"
+                  data-ride="carousel"
+                >
+                  <Thumbnails tile={tile} />
+
+                  <div className="carousel-inner border border-light">
+                    {tile.screenshots.map(function(ss, index) {
+                      var cls =
+                        index === 0
+                          ? "screenshot-spacing carousel-item active"
+                          : "screenshot-spacing carousel-item";
+                      return (
+                        <div className={cls} key={index}>
+                          <img
+                            src={tile.basePath + "/" + ss.image}
+                            className="d-block w-100"
+                            alt="..."
+                          />
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
+                  <a
+                    className="carousel-control-prev"
+                    href="#carouselExampleCaptions"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      className="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="sr-only">Previous</span>
+                  </a>
+                  <a
+                    className="carousel-control-next"
+                    href="#carouselExampleCaptions"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      className="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="sr-only">Next</span>
+                  </a>
                 </div>
-                <a
-                  class="carousel-control-prev"
-                  href="#carouselExampleCaptions"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carouselExampleCaptions"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
             </div>
+            <div className="modal-footer">
+              <p>{tile.description}</p>
+              {/* <button
+                type="button"
+                className="btn btn-secondary"
+                onClick={this.props.toggleShow.bind(this, 0)}
+              >
+                Close
+              </button> */}
+            </div>
           </div>
-          <div className="modal-footer">
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={this.props.toggleShow.bind(this, 0)}
-            >
-              Close
-            </button>
-          </div>
-        </div>
+        </ErrorBoundary>
       </span>
     );
   }

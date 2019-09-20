@@ -15,9 +15,7 @@ const AboutMe = props => {
       <span className="icon">
         <i className="fa fa-commenting fa-3x"></i>
       </span>
-      <h4>
-        <strong>About</strong> Me
-      </h4>
+
       <p className="lead">{aboutMeLead}</p>
       <p>{aboutMe}</p>
     </div>

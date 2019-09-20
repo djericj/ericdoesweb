@@ -25,13 +25,10 @@ const Resume = () => {
 
   return (
     <div className="row padding-lg">
-      <div className="col-md-4 col-sm-6 col-xs-12">
-        <AboutMe />
-      </div>
-      <div className="col-md-4 col-sm-6 col-xs-12">
+      <div className="col-sm-6 col-xs-12">
         <ProfessionalSummary />
       </div>
-      <div className="col-md-4 col-sm-6 col-xs-12">
+      <div className="col-sm-6 col-xs-12">
         <TechnicalSkills classes={classes} />
       </div>
     </div>

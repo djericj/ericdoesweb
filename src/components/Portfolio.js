@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import data from "../data/portfolio.json";
 import Card from "./Card";
 import Modal from "./Modal";
+import { ErrorBoundary } from "./ErrorBoundary.js";
 
 function getModalStyle() {
   const top = 50;
@@ -31,7 +32,6 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div>
-        <h2>Portfolio</h2>
         <div className="card-columns padding-lg">
           {data.map(tile => (
             <div key={tile.name}>
@@ -43,11 +43,13 @@ class Portfolio extends React.Component {
             </div>
           ))}
         </div>
-        <Modal
-          show={this.state.show}
-          toggleShow={this.toggleShow}
-          state={this.state}
-        />
+        <ErrorBoundary>
+          <Modal
+            show={this.state.show}
+            toggleShow={this.toggleShow}
+            state={this.state}
+          />
+        </ErrorBoundary>
       </div>
     );
   }
