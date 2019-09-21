@@ -113,55 +113,38 @@ export default class App extends React.Component {
           </h2>
           <a name="contact"></a>
           <Contact classes={classes} />
-          <footer class="bd-footer text-muted">
-            <div class="container-fluid p-3 p-md-5">
-              <ul class="bd-footer-links">
-                <li>
-                  <a href="https://github.com/twbs/bootstrap">GitHub</a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/getbootstrap">Twitter</a>
-                </li>
-                <li>
-                  <a href="/docs/4.3/examples/">Examples</a>
-                </li>
-                <li>
-                  <a href="/docs/4.3/about/overview/">About</a>
-                </li>
-              </ul>
-              <p>
-                Designed and built with all the love in the world by the{" "}
-                <a href="/docs/4.3/about/team/">Bootstrap team</a> with the help
-                of{" "}
-                <a href="https://github.com/twbs/bootstrap/graphs/contributors">
-                  our contributors
-                </a>
-                .
-              </p>
-              <p>
-                Currently v4.3.1. Code licensed{" "}
-                <a
-                  href="https://github.com/twbs/bootstrap/blob/master/LICENSE"
-                  target="_blank"
-                  rel="license noopener"
-                >
-                  MIT
-                </a>
-                , docs{" "}
-                <a
-                  href="https://creativecommons.org/licenses/by/3.0/"
-                  target="_blank"
-                  rel="license noopener"
-                >
-                  CC BY 3.0
-                </a>
-                .
-              </p>
-            </div>
-          </footer>
         </section>
 
         <ToastContainer />
+        <footer class="bd-footer text-muted">
+          <div class="container-fluid p-3 p-md-5">
+            <hr class="border border-light" style={{ opacity: "0.1" }} />
+            <p>
+              Designed and built entirely by{" "}
+              <a href="#">
+                <mark>Eric Rydberg</mark>.
+              </a>
+            </p>
+            <p>
+              Built with{" "}
+              <a href="https://reactjs.org/" target="_new">
+                <mark>React</mark>
+              </a>
+              , a JavaScript library for user interfaces.
+            </p>
+            <p>
+              Hosted on{" "}
+              <a href="https://azure.microsoft.com" target="_new">
+                Microsoft <mark>Azure</mark> Cloud
+              </a>{" "}
+              on{" "}
+              <a href="https://ubuntu.com/" target="_new">
+                <mark>Ubuntu Linux</mark>
+              </a>
+              .
+            </p>
+          </div>
+        </footer>
       </div>
     );
   }
