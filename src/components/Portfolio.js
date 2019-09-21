@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import data from "../data/portfolio.json";
 import Card from "./Card";
 import Modal from "./Modal";
-import { ErrorBoundary } from "./ErrorBoundary.js";
 
 function getModalStyle() {
   const top = 50;
@@ -43,13 +42,12 @@ class Portfolio extends React.Component {
             </div>
           ))}
         </div>
-        <ErrorBoundary>
-          <Modal
-            show={this.state.show}
-            toggleShow={this.toggleShow}
-            state={this.state}
-          />
-        </ErrorBoundary>
+
+        <Modal
+          show={this.state.show}
+          toggleShow={this.toggleShow}
+          state={this.state}
+        />
       </div>
     );
   }

@@ -8,13 +8,12 @@ const Card = props => {
         className="card-img-top"
         alt="..."
       />
-      <div className="card-body">
+      <div className="card-body" style={{ cursor: "pointer" }}>
         <h5 className="card-title text-dark">{props.tile.name}</h5>
         <p className="card-text text-dark font-weight-normal">
           {props.tile.technologies}
         </p>
         <a
-          href="javascript:void(0)"
           data-project={props.tile.id}
           className="stretched-link"
           onClick={props.toggleShow.bind(this, props.tile.id)}

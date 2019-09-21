@@ -2,46 +2,51 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div class="card-deck">
-      <div class="card">
-        <img
-          src="./images/linkedin-600x300.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">
-            My professional profile on LinkedIn. Message me there.
-          </p>
-          <a
-            href="https://www.linkedin.com/in/eric-rydberg-6657043/"
-            class="stretched-link"
-          ></a>
-        </div>
+    <div className="card-deck">
+      <div className="card">
+        <a
+          href="https://www.linkedin.com/in/eric-rydberg-6657043/"
+          className="stretched-link"
+        >
+          <img
+            src="./images/linkedin-600x300.png"
+            className="card-img-top"
+            alt="..."
+          />
+          <div className="card-body">
+            <p className="card-text">
+              My professional profile on LinkedIn. Message me there.
+            </p>
+          </div>
+        </a>
       </div>
-      <div class="card">
-        <img src="../images/github.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">Take a look at some of the code I've done.</p>
-        </div>
-        <a href="https://github.com/djericj" class="stretched-link"></a>
+      <div className="card">
+        <a href="https://github.com/djericj" className="stretched-link">
+          <img src="../images/github.png" className="card-img-top" alt="..." />
+          <div className="card-body">
+            <p className="card-text">
+              Take a look at some of the code I've done.
+            </p>
+          </div>
+        </a>
       </div>
-      <div class="card">
-        <img
-          src="./images/stackoverflow.png"
-          class="card-img-top"
-          style={{ paddingTop: "25px", maxWidth: "75%", margin: "0 auto" }}
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Questions, answers and interaction with the developer community.
-          </p>
-        </div>
+      <div className="card">
         <a
           href="https://stackoverflow.com/users/10255368/eric-j"
-          class="stretched-link"
-        ></a>
+          className="stretched-link"
+        >
+          <img
+            src="./images/stackoverflow.png"
+            className="card-img-top"
+            style={{ paddingTop: "25px", maxWidth: "75%", margin: "0 auto" }}
+            alt="..."
+          />
+          <div className="card-body">
+            <p className="card-text">
+              Questions, answers and interaction with the developer community.
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   );

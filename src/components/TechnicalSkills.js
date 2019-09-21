@@ -1,8 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Chip, Typography } from "@material-ui/core";
-import ComputerIcon from "@material-ui/icons/Computer";
-import ContentBox from "../layout/contentBox";
+import { Chip } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   root: {

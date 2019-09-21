@@ -1,32 +1,7 @@
 import React from "react";
-import {
-  Grid,
-  Divider,
-  Button,
-  Container,
-  Avatar,
-  makeStyles
-} from "@material-ui/core";
+import { Grid, Divider, Avatar } from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
-  button: {
-    flexGrow: 1,
-    margin: 15
-  },
-  avatar: {
-    margin: 10,
-    backgroundColor: "#fff",
-    color: "#4159a3"
-  },
-  bigAvatar: {
-    margin: 10,
-    width: 60,
-    height: 60
-  }
-}));
-
-export const SideNav = () => {
-  const classes = useStyles();
+export const SideNav = props => {
   return (
     <div className="">
       <Grid container>
@@ -35,7 +10,7 @@ export const SideNav = () => {
             <Avatar
               alt="Eric Rydberg"
               src="/images/0.jpg"
-              className={classes.bigAvatar}
+              className={props.classes.bigAvatar}
             />
           </div>
           <div className="media-body">
@@ -85,6 +60,13 @@ export const SideNav = () => {
           className="list-group-item list-group-item-action"
         >
           Download my resume
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eric-rydberg-6657043/"
+          target="_new"
+          className="list-group-item list-group-item-action"
+        >
+          Message me on LinkedIn
         </a>
       </div>
 
@@ -142,18 +124,6 @@ export const SideNav = () => {
         Download my resume
       </Button> */}
     </div>
-  );
-};
-
-const MenuListItem = props => {
-  const classes = useStyles();
-  return (
-    <li className="nav-item border-bottom">
-      <a href={props.link} className="nav-link">
-        {/* {props.icon}  */}
-        {props.primary}
-      </a>
-    </li>
   );
 };
 

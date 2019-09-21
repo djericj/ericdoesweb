@@ -1,39 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { toast } from "react-toastify";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { SideNav } from "./layout/Nav";
-import { ErrorBoundary } from "./components/ErrorBoundary";
+import TopNav from "./layout/TopNav";
+import { makeStyles } from "@material-ui/core";
 
 export class Index extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  componentDidCatch(error, errorInfo) {
-    // You can also log the error to an error reporting service
-    toast.error(error.toString(), {
-      position: toast.POSITION.BOTTOM_LEFT,
-      autoClose: false,
-      className: "bg-danger",
-      bodyClassName: ""
-    });
-    //console.log(errorInfo.toString());
-  }
-
   render() {
+    const classes = makeStyles(theme => ({
+      avatar: {
+        margin: 10,
+        backgroundColor: "#fff",
+        color: "#4159a3"
+      },
+      bigAvatar: {
+        margin: 10,
+        width: 60,
+        height: 60
+      }
+    }));
     return (
-      <div className="bg-dark">
-        <ErrorBoundary>
-          <nav id="sidebar">
-            <SideNav />
-          </nav>
-          <div id="content">
-            <App />
-          </div>
-        </ErrorBoundary>
+      <div className="row bg-dark">
+        <div className="d-md-none d-lg-none w-100">
+          <TopNav classes={classes} />
+        </div>
+        <nav id="sidebar" className="d-none d-md-block d-sm-none">
+          <SideNav classes={classes} />
+        </nav>
+        <div id="content">
+          <App classes={classes} />
+        </div>
       </div>
     );
   }

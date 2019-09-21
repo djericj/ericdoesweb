@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 
 const aboutMeLead = `I have been designing and developing for the web since the beginning.`;
 

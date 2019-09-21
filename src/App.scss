@@ -50,8 +50,14 @@ p {
 }
 
 #content {
-  margin-left: 250px;
   padding: 20px;
+}
+
+@media (min-width: 768px) {
+  #content {
+    margin-left: 250px;
+    padding: 20px;
+  }
 }
 
 code {
@@ -116,6 +122,10 @@ code {
   align-content: stretch;
 }
 
+.navbar {
+  padding: 0;
+}
+
 .navbar,
 .list-group {
   background-color: transparent;
@@ -140,6 +150,15 @@ a:focus {
   transition: all 0.3s;
 }
 
+.sidebar-header {
+  padding: 20px;
+  background: $primary-light;
+  width: 100%;
+  text-align: right;
+  color: #000;
+  font-size: 0.9rem;
+}
+
 #sidebar {
   /* don't forget to add all the previously mentioned styles here too */
   background: $primary-dark;
@@ -158,15 +177,6 @@ a:focus {
 
 #sidebar .secondary {
   font-size: 0.9em;
-}
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  background: $primary-light;
-  width: 100%;
-  text-align: right;
-  color: #000;
-  font-size: 0.9rem;
 }
 
 #sidebar .list-group-item {
@@ -310,28 +320,51 @@ a {
 }
 
 ol.carousel-indicators {
-  position: absolute;
   bottom: 0;
+  position: relative;
+  justify-content: initial;
+  width: 80%;
 }
 
 ol.carousel-indicators > li {
-  background-color: #999;
+  background-color: #fff;
   width: inherit;
-  height: 120px;
+  height: 80px;
 }
 
 ol.carousel-indicators > li.active {
   background-color: #000;
 }
 
+.carousel-inner {
+  max-height: 68vh;
+  overflow: hidden;
+}
+.carousel-inner img {
+  object-fit: contain;
+}
+
 button.close:hover {
   color: #fff;
 }
 
+.modal-footer {
+  display: initial;
+}
+
+.modal-footer .carousel-item {
+  max-width: 120px;
+  height: 80px;
+}
+
+#carouselThumbnailControls {
+  width: 100%;
+}
+
 .thumbnail {
   position: relative;
-  width: 120px;
-  height: 120px;
+  min-width: 130px;
+  height: 100%;
   overflow: hidden;
 }
 .thumbnail img {

@@ -1,12 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 import Experience from "./components/Experience";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
-import DownloadResume from "./components/DownloadResume";
 import Contact from "./components/Contact";
 import ProfessionalSummary from "./components/ProfessionalSummary";
 import TechnicalSkills from "./components/TechnicalSkills";
@@ -24,6 +21,10 @@ const classes = makeStyles(theme => ({
   },
   chip: {
     margin: theme.spacing(0.5)
+  },
+  button: {
+    flexGrow: 1,
+    margin: 15
   }
 }));
 
@@ -44,31 +45,31 @@ export default class App extends React.Component {
           <a name="aboutme"></a>
           <AboutMe classes={classes} />
         </section>
-        <hr class="border border-light" style={{ opacity: "0.1" }} />
+        <hr className="border border-light" style={{ opacity: "0.1" }} />
         <section id="professional-summary" className="pt-5">
           <span className="icon float-right">
             <i className="fa fa-book fa-3x"></i>
           </span>
-          <h2 id="professional-summary" class="pb-5">
+          <h2 id="professional-summary" className="pb-5">
             Professional summary
           </h2>
           <a name="professional-summary"></a>
 
           <ProfessionalSummary classes={classes} />
         </section>
-        <hr class="border border-light" style={{ opacity: "0.1" }} />
+        <hr className="border border-light" style={{ opacity: "0.1" }} />
         <section id="technical-skills" className="pt-5">
           <span className="icon float-right">
             <i className="fa fa-laptop fa-3x"></i>
           </span>
-          <h2 id="technical-skills" class="pb-5">
+          <h2 id="technical-skills" className="pb-5">
             Technical skills
           </h2>
           <a name="technical-skills"></a>
 
           <TechnicalSkills classes={classes} />
         </section>
-        <hr class="border border-light" style={{ opacity: "0.1" }} />
+        <hr className="border border-light" style={{ opacity: "0.1" }} />
         {/* <section id="resume" className="mb-5">
           <h2 id="resume">Resume</h2>
           <a name="resume"></a>
@@ -80,24 +81,24 @@ export default class App extends React.Component {
           <span className="icon float-right">
             <i className="fa fa-file-text fa-3x"></i>
           </span>
-          <h2 id="experience" class="pb-5">
+          <h2 id="experience" className="pb-5">
             Experience
           </h2>
           <a name="experience"></a>
           <Experience classes={classes} />
         </section>
-        <hr class="border border-light" style={{ opacity: "0.1" }} />
+        <hr className="border border-light" style={{ opacity: "0.1" }} />
         <section id="portfolio" className="pt-5">
           <span className="icon float-right">
             <i className="fa fa-folder-open fa-3x"></i>
           </span>
-          <h2 id="portfolio" class="pb-5">
+          <h2 id="portfolio" className="pb-5">
             Portfolio
           </h2>
           <a name="portfolio"></a>
           <Portfolio classes={classes} />
         </section>
-        <hr class="border border-light" style={{ opacity: "0.1" }} />
+        <hr className="border border-light" style={{ opacity: "0.1" }} />
         {/* <a name="technologies"></a>
       <Technologies /> */}
         {/* <section className="mb-5">
@@ -108,17 +109,16 @@ export default class App extends React.Component {
           <span className="icon float-right">
             <i className="fa fa-envelope fa-3x"></i>
           </span>
-          <h2 id="contact" class="pb-5">
+          <h2 id="contact" className="pb-5">
             Contact me
           </h2>
           <a name="contact"></a>
           <Contact classes={classes} />
         </section>
 
-        <ToastContainer />
-        <footer class="bd-footer text-muted">
-          <div class="container-fluid p-3 p-md-5">
-            <hr class="border border-light" style={{ opacity: "0.1" }} />
+        <footer className="bd-footer text-muted">
+          <div className="container-fluid p-3 p-md-5">
+            <hr className="border border-light" style={{ opacity: "0.1" }} />
             <p>
               Designed and built entirely by{" "}
               <a href="#">

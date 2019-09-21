@@ -1,5 +1,4 @@
 import React from "react";
-import Job from "./Job";
 import data from "../data/experience.json";
 
 const Experience = () => {

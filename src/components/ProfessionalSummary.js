@@ -47,7 +47,7 @@ const Items = [
 
 const ProfessionalSummary = () => {
   return (
-    <div className="row  justify-content-md-center">
+    <div className="row ml-1">
       <ItemsArray />
     </div>
   );
@@ -62,8 +62,8 @@ const ItemsArray = () => {
       //   <p key={data.key}>{data.item}</p>
       //   {/* <p className="border-bottom border-secondary"></p> */}
       // </div>
-      <div className="pb-4 col-xs-12">
-        <div className="media" key={data.key}>
+      <div className="pb-4 col-xs-12" key={data.key}>
+        <div className="media">
           <div className="mr-4" style={{ width: "32px" }}>
             <i className={data.icon}></i>
           </div>
