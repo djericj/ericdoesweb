@@ -3,8 +3,8 @@ import { Avatar } from "@material-ui/core";
 
 const TopNav = props => {
   return (
-    <nav class="navbar navbar-light bg-light">
-      <div class="media sidebar-header" href="#">
+    <nav className="navbar navbar-light bg-light fixed-top">
+      <div className="media sidebar-header" href="#">
         <div className="profilepic">
           <Avatar
             alt="Eric Rydberg"

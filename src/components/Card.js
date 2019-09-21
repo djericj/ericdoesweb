@@ -13,11 +13,13 @@ const Card = props => {
         <p className="card-text text-dark font-weight-normal">
           {props.tile.technologies}
         </p>
-        <a
+        <button
           data-project={props.tile.id}
-          className="stretched-link"
+          className="btn btn-link stretched-link"
           onClick={props.toggleShow.bind(this, props.tile.id)}
-        ></a>
+        >
+          view screenshots
+        </button>
       </div>
     </div>
   );

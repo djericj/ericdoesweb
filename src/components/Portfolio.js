@@ -3,20 +3,6 @@ import data from "../data/portfolio.json";
 import Card from "./Card";
 import Modal from "./Modal";
 
-function getModalStyle() {
-  const top = 50;
-  const left = 50;
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    width: `98%`,
-    height: `98%`,
-    transform: `translate(-${top}%, -${left}%)`,
-    overflow: "scroll"
-  };
-}
-
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);

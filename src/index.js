@@ -8,10 +8,6 @@ import TopNav from "./layout/TopNav";
 import { makeStyles } from "@material-ui/core";
 
 export class Index extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const classes = makeStyles(theme => ({
       avatar: {

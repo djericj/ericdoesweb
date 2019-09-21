@@ -51,12 +51,14 @@ p {
 
 #content {
   padding: 20px;
+  margin-top: 110px;
 }
 
 @media (min-width: 768px) {
   #content {
     margin-left: 250px;
     padding: 20px;
+    margin-top: 0px;
   }
 }
 

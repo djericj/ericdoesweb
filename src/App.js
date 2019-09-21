@@ -29,10 +29,6 @@ const classes = makeStyles(theme => ({
 }));
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container-fluid">
@@ -42,7 +38,6 @@ export default class App extends React.Component {
           </span>
           <h2 id="aboutme">25 years of development, since 1995.</h2>
 
-          <a name="aboutme"></a>
           <AboutMe classes={classes} />
         </section>
         <hr className="border border-light" style={{ opacity: "0.1" }} />
@@ -53,7 +48,6 @@ export default class App extends React.Component {
           <h2 id="professional-summary" className="pb-5">
             Professional summary
           </h2>
-          <a name="professional-summary"></a>
 
           <ProfessionalSummary classes={classes} />
         </section>
@@ -65,7 +59,6 @@ export default class App extends React.Component {
           <h2 id="technical-skills" className="pb-5">
             Technical skills
           </h2>
-          <a name="technical-skills"></a>
 
           <TechnicalSkills classes={classes} />
         </section>
@@ -84,7 +77,7 @@ export default class App extends React.Component {
           <h2 id="experience" className="pb-5">
             Experience
           </h2>
-          <a name="experience"></a>
+
           <Experience classes={classes} />
         </section>
         <hr className="border border-light" style={{ opacity: "0.1" }} />
@@ -95,7 +88,7 @@ export default class App extends React.Component {
           <h2 id="portfolio" className="pb-5">
             Portfolio
           </h2>
-          <a name="portfolio"></a>
+
           <Portfolio classes={classes} />
         </section>
         <hr className="border border-light" style={{ opacity: "0.1" }} />
@@ -112,7 +105,7 @@ export default class App extends React.Component {
           <h2 id="contact" className="pb-5">
             Contact me
           </h2>
-          <a name="contact"></a>
+
           <Contact classes={classes} />
         </section>
 
@@ -121,7 +114,7 @@ export default class App extends React.Component {
             <hr className="border border-light" style={{ opacity: "0.1" }} />
             <p>
               Designed and built entirely by{" "}
-              <a href="#">
+              <a href="/">
                 <mark>Eric Rydberg</mark>.
               </a>
             </p>

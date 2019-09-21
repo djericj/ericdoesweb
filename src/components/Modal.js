@@ -6,52 +6,6 @@ var thumbnailStyle = {
   margin: "0 auto"
 };
 
-const ThumbnailCarousel = props => {
-  return (
-    <div
-      id="carouselThumbnailControls"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        {props.tile.screenshots.map((thumb, index) => {
-          var cls = index === 0 ? "active" : "";
-
-          return (
-            <div class="carousel-item active">
-              <div className="thumbnail border border-primary">
-                <img
-                  src={props.tile.basePath + "/" + thumb.image}
-                  className="d-block roundedg"
-                  alt="..."
-                />
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleControls"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleControls"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  );
-};
-
 const Thumbnails = props => {
   //if (!tile.screenshots) return <div></div>;
   try {
@@ -59,15 +13,12 @@ const Thumbnails = props => {
       <div>
         <ol className="carousel-indicators" style={thumbnailStyle}>
           {props.tile.screenshots.map((thumb, index) => {
-            var cls = index === 0 ? "active" : "";
-
             return (
               <li
                 key={thumb.id}
                 className="p-2 bd-highlight"
                 data-target="#carouselScreenshots"
                 data-slide-to={index}
-                className={cls}
                 style={{ cursor: "pointer" }}
               >
                 <div className="thumbnail border border-primary">
@@ -147,42 +98,5 @@ export class Modal extends React.Component {
     );
   }
 }
-
-const ModalHeader = ({ handleClose, tile }) => {
-  return (
-    <div className="modal-header">
-      <h5 className="modal-title" id="exampleModalLabel">
-        New message
-      </h5>
-      <button
-        type="button"
-        className="close"
-        data-dismiss="modal"
-        aria-label="Close"
-        onClick={handleClose}
-      >
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  );
-};
-
-const ModalBody = ({ tile }) => {
-  return (
-    <div className="modal-body">
-      <h2>Body </h2>
-    </div>
-  );
-};
-
-const ModalFooter = ({ handleClose }) => {
-  return (
-    <div className="modal-footer">
-      <button type="button" className="btn btn-secondary" onClick={handleClose}>
-        Close
-      </button>
-    </div>
-  );
-};
 
 export default Modal;
