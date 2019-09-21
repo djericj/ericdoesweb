@@ -35,7 +35,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <section id="aboutme" className="pt-5">
+        <section id="aboutme" className="">
           <span className="icon float-right">
             <i className="fa fa-commenting fa-3x"></i>
           </span>

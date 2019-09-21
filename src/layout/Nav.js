@@ -7,7 +7,6 @@ import {
   Avatar,
   makeStyles
 } from "@material-ui/core";
-import Scrollspy from "react-scrollspy";
 
 const useStyles = makeStyles(theme => ({
   button: {

@@ -20,14 +20,15 @@ const Thumbnails = props => {
         >
           {props.tile.screenshots.map((thumb, index) => {
             var cls = index === 0 ? "active" : "";
-            index++;
+
             return (
               <li
                 key={thumb.id}
                 className="p-2 bd-highlight"
-                data-target={`carousel-${index}`}
+                data-target="#carouselScreenshots"
                 data-slide-to={index}
                 className={cls}
+                style={{ cursor: "pointer" }}
               >
                 <div className="thumbnail border border-primary">
                   <img
@@ -66,17 +67,16 @@ export class Modal extends React.Component {
               </h5>
               <button
                 type="button"
-                className="close"
-                aria-label="Close"
+                class="btn btn-secondary btn-sm"
                 onClick={this.props.toggleShow.bind(this, 0)}
               >
-                <span aria-hidden="true">&times;</span>
+                Close
               </button>
             </div>
             <div className="modal-body">
               <div className="bd-example">
                 <div
-                  id="carouselExampleCaptions"
+                  id="carouselScreenshots"
                   className="carousel slide"
                   data-ride="carousel"
                 >
@@ -99,7 +99,7 @@ export class Modal extends React.Component {
                       );
                     })}
                   </div>
-                  <a
+                  {/* <a
                     className="carousel-control-prev"
                     href="#carouselExampleCaptions"
                     role="button"
@@ -122,7 +122,7 @@ export class Modal extends React.Component {
                       aria-hidden="true"
                     ></span>
                     <span className="sr-only">Next</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

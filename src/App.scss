@@ -297,7 +297,8 @@ a {
 }
 
 .screenshot-spacing {
-  padding: 50px 20px;
+  // padding: 50px 20px;
+  margin-bottom: 120px;
 }
 
 .carousel-caption {
@@ -309,7 +310,8 @@ a {
 }
 
 ol.carousel-indicators {
-  top: 480px;
+  position: absolute;
+  bottom: 0;
 }
 
 ol.carousel-indicators > li {
@@ -320,6 +322,10 @@ ol.carousel-indicators > li {
 
 ol.carousel-indicators > li.active {
   background-color: #000;
+}
+
+button.close:hover {
+  color: #fff;
 }
 
 .thumbnail {
@@ -344,7 +350,8 @@ ol.carousel-indicators > li.active {
 }
 
 footer {
-  margin-top: 50px;
+  padding: 200px 0;
+  padding-bottom: 160px;
 }
 
 mark {
