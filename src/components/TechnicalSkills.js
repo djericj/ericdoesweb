@@ -1,19 +1,31 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import { Chip, Typography } from "@material-ui/core";
 import ComputerIcon from "@material-ui/icons/Computer";
 import ContentBox from "../layout/contentBox";
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    margin: `${theme.spacing(1)}px auto`,
+    padding: theme.spacing(2)
+  },
+  control: {
+    padding: theme.spacing(2)
+  },
+  chip: {
+    margin: theme.spacing(0.5)
+  }
+}));
+
 const TechnicalSkills = props => {
+  const classes = useStyles();
   return (
     <div className="resume-box">
-      <span className="icon">
-        <i className="fa fa-laptop fa-3x"></i>
-      </span>
-      <h4>
-        <strong>Technical</strong> Skills
-      </h4>
       <div>
-        <ChipData classes={props.classes} />
+        <ChipData classes={classes} />
       </div>
     </div>
   );

@@ -1,23 +1,17 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const aboutMeLead = `I have a thirst for knowledge. Highly curious. I like intellectually
-interesting work and exploring new ideas.`;
+const aboutMeLead = `I have been designing and developing for the web since the beginning.`;
 
-const aboutMe = `I am an independent
-thinker. I am always looking to improve: New approaches, strategies,
-tactics, technologies. I can take in complex principles and
-techniques and change them into clear and actionable strategies.`;
+const aboutMe = `When I started, Amazon was a single page to find rare books, 
+Google was a college project called PageRank and the dominant web browser of the time was Netscape Navigator.  
+I've seen big computer companies come and go, Internet giants rise and fall. I have been a part of the web since it all started.  I believe this gives me a unique perspective, wisdom and insight.`;
 
 const AboutMe = props => {
   return (
     <div className="resume-box">
-      <span className="icon">
-        <i className="fa fa-commenting fa-3x"></i>
-      </span>
-
       <p className="lead">{aboutMeLead}</p>
-      <p>{aboutMe}</p>
+      <h6 style={{ lineHeight: "1.9em" }}>{aboutMe}</h6>
     </div>
   );
 };

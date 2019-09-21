@@ -258,6 +258,23 @@ ul ul a {
   visibility: visible;
 }
 
+.card-body,
+.card-text {
+  color: #000;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .icon > i {
   color: $primary-light;
   padding: 10px 0;

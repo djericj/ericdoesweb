@@ -54,10 +54,19 @@ export const SideNav = () => {
           href="#aboutme"
           className="list-group-item list-group-item-action active"
         >
-          About Me
+          About me
         </a>
-        <a href="#resume" className="list-group-item list-group-item-action">
-          Resume
+        <a
+          href="#professional-summary"
+          className="list-group-item list-group-item-action"
+        >
+          Professional summary
+        </a>
+        <a
+          href="#technical-skills"
+          className="list-group-item list-group-item-action"
+        >
+          Technical skills
         </a>
         <a
           href="#experience"
@@ -69,7 +78,14 @@ export const SideNav = () => {
           Portfolio
         </a>
         <a href="#contact" className="list-group-item list-group-item-action">
-          Contact Me
+          Contact me
+        </a>
+        <a
+          href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
+          target="_new"
+          className="list-group-item list-group-item-action"
+        >
+          Download my resume
         </a>
       </div>
 
@@ -83,7 +99,7 @@ export const SideNav = () => {
               href="https://www.linkedin.com/in/eric-rydberg-6657043/"
               target="_new"
               className="nav-link"
-              title="My profile on Linked In"
+              title="My professional profile on Linked In"
               data-toggle="tooltip"
               data-placement="top"
             >
@@ -95,7 +111,7 @@ export const SideNav = () => {
               href="https://github.com/djericj"
               target="_new"
               className="nav-link"
-              title="My open source code on GitHub"
+              title="Take a look at some of the code I've done."
               data-toggle="tooltip"
               data-placement="top"
             >
@@ -107,7 +123,7 @@ export const SideNav = () => {
               href="https://stackoverflow.com/users/10255368/eric-j"
               target="_new"
               className="nav-link"
-              title="My community contributions on Stack Overflow"
+              title="Questions, answers and interaction with the developer community."
               data-toggle="tooltip"
               data-placement="top"
             >
@@ -116,17 +132,16 @@ export const SideNav = () => {
           </li>
         </ul>
       </div>
-      {/* <Container>
-        <Button
-          href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
-          variant="contained"
-          color="primary"
-          size="small"
-          className={classes.button}
-        >
-          Download my resume (.docx)
-        </Button>
-      </Container> */}
+      {/* 
+      <Button
+        href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
+        variant="contained"
+        color="primary"
+        size="small w-100"
+        className={classes.button}
+      >
+        Download my resume
+      </Button> */}
     </div>
   );
 };
