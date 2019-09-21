@@ -10,7 +10,9 @@ const Contact = () => {
           alt="..."
         />
         <div class="card-body">
-          <p class="card-text">My professional profile on LinkedIn.</p>
+          <p class="card-text">
+            My professional profile on LinkedIn. Message me there.
+          </p>
           <a
             href="https://www.linkedin.com/in/eric-rydberg-6657043/"
             class="stretched-link"
@@ -25,7 +27,12 @@ const Contact = () => {
         <a href="https://github.com/djericj" class="stretched-link"></a>
       </div>
       <div class="card">
-        <img src="./images/stackoverflow.png" class="card-img-top" alt="..." />
+        <img
+          src="./images/stackoverflow.png"
+          class="card-img-top"
+          style={{ paddingTop: "25px", maxWidth: "75%", margin: "0 auto" }}
+          alt="..."
+        />
         <div class="card-body">
           <p class="card-text">
             Questions, answers and interaction with the developer community.
