@@ -31,14 +31,14 @@ const TechnicalSkills = props => {
 
 const ChipData = props => {
   return [
-    { key: 0, label: "ASP.NET" },
-    { key: 1, label: "C#" },
-    { key: 2, label: "Microsoft SQL" },
-    { key: 3, label: "MVC" },
-    { key: 4, label: "Web Development" },
-    { key: 5, label: "Solution Architecture" },
-    { key: 6, label: "Web Services" },
-    { key: 7, label: "Web API" },
+    { key: 0, label: ".NET Core" },
+    { key: 1, label: "Web API" },
+    { key: 2, label: "ASP.NET MVC" },
+    { key: 3, label: "C#" },
+    { key: 4, label: "Microsoft SQL" },
+    { key: 5, label: "Web Development" },
+    { key: 6, label: "Solution Architecture" },
+    { key: 7, label: "Web Services" },
     { key: 8, label: "REST" },
     { key: 9, label: "JavaScript" },
     { key: 10, label: "JQuery" },

@@ -1,5 +1,27 @@
 [
   {
+    "title": "Senior Developer",
+    "subtitle": "Code Authority, Inc.",
+    "environment": ".NET Core, Web API, C#, Angular 7, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps, Agile",
+    "from": "Sep 2019",
+    "to": "Present",
+    "image": "",
+    "description": [
+      {
+        "item": "Currently building a large roofing company internal management application entirely on my own. Built with Angular 7, .NET Core, Web API, and Entity Framework."
+      },
+      {
+        "item": "Consulting and advice across a wide range of new and existing projects for the company."
+      },
+      {
+        "item": "Mentor young developers and help teach staff about new technologies and best practices."
+      },
+      {
+        "item": "Evaluate new technologies and develop techniques, standards."
+      }
+    ]
+  },
+  {
     "title": "Application Developer",
     "subtitle": "Bank of America, Global Information Security",
     "environment": "ASP.NET MVC, C#, Angular 7, JavaScript, jQuery, Microsoft SQL, Kafka, Apache SOLR, Git, TFS, Agile",

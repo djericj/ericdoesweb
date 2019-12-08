@@ -38,11 +38,24 @@ const Contact = () => {
           <img
             src="./images/stackoverflow.png"
             className="card-img-top"
-            style={{ paddingTop: "25px", maxWidth: "75%", margin: "0 auto" }}
+            style={{
+              paddingTop: "25px",
+              maxWidth: "75%",
+              margin: "0 auto",
+              position: "absolute",
+              left: "12%",
+              top: "10%"
+            }}
             alt="..."
           />
           <div className="card-body">
-            <p className="card-text">
+            <p
+              className="card-text"
+              style={{
+                position: "absolute",
+                bottom: "7%"
+              }}
+            >
               Questions, answers and interaction with the developer community.
             </p>
           </div>

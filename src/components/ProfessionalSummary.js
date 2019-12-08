@@ -56,13 +56,7 @@ const ProfessionalSummary = () => {
 const ItemsArray = () => {
   return Items.map(data => {
     return (
-      // <div className="col " key={data.key}>
-      //   <i className={data.icon}></i>
-      //   <br />
-      //   <p key={data.key}>{data.item}</p>
-      //   {/* <p className="border-bottom border-secondary"></p> */}
-      // </div>
-      <div className="pb-4 col-xs-12" key={data.key}>
+      <div className="pb-4 col-6" key={data.key}>
         <div className="media">
           <div className="mr-4" style={{ width: "32px" }}>
             <i className={data.icon}></i>
