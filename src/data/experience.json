@@ -1,6 +1,6 @@
 [
   {
-    "title": "Senior Developer",
+    "title": "Senior C# Developer",
     "subtitle": "Code Authority, Inc.",
     "environment": ".NET Core, Web API, C#, Angular 7, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps, Agile",
     "from": "Sep 2019",
@@ -8,16 +8,19 @@
     "image": "",
     "description": [
       {
-        "item": "Currently building a large roofing company internal management application entirely on my own. Built with Angular 7, .NET Core, Web API, and Entity Framework."
+        "item": "Currently working on a large roofing company internal management application built with Angular 7, Web API, OData and Dapper ORM."
       },
       {
-        "item": "Consulting and advice across a wide range of new and existing projects for the company."
+        "item": "Setting up and maintaining the Azure infrastructure, including App Services, Azure SQL Databases, Azure Active Directory."
+      },
+      {
+        "item": "Managing the entire product lifecycle in Azure DevOps including pipeline build and release."
       },
       {
         "item": "Mentor young developers and help teach staff about new technologies and best practices."
       },
       {
-        "item": "Evaluate new technologies and develop techniques, standards."
+        "item": "Evaluate new technologies, develop techniques and standards."
       }
     ]
   },

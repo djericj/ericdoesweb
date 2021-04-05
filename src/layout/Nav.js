@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Divider, Avatar } from "@material-ui/core";
 
-export const SideNav = props => {
+export const SideNav = (props) => {
   return (
     <div className="">
       <Grid container>
@@ -55,7 +55,7 @@ export const SideNav = props => {
           Contact me
         </a>
         <a
-          href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
+          href="https://www.dropbox.com/s/cutrrckmh3g9iid/Resume%202020%20Eric%20Rydberg.docx?dl=0"
           target="_new"
           className="list-group-item list-group-item-action"
         >
