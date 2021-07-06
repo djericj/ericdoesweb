@@ -2,23 +2,23 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Chip } from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   paper: {
     margin: `${theme.spacing(1)}px auto`,
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
   },
   control: {
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
   },
   chip: {
-    margin: theme.spacing(0.5)
-  }
+    margin: theme.spacing(0.5),
+  },
 }));
 
-const TechnicalSkills = props => {
+const TechnicalSkills = (props) => {
   const classes = useStyles();
   return (
     <div className="resume-box">
@@ -29,7 +29,7 @@ const TechnicalSkills = props => {
   );
 };
 
-const ChipData = props => {
+const ChipData = (props) => {
   return [
     { key: 0, label: ".NET Core" },
     { key: 1, label: "Web API" },
@@ -42,15 +42,12 @@ const ChipData = props => {
     { key: 8, label: "REST" },
     { key: 9, label: "JavaScript" },
     { key: 10, label: "JQuery" },
-    { key: 11, label: "Angular" },
-    { key: 12, label: "React" },
     { key: 13, label: "Bootstrap" },
     { key: 14, label: "HTML5" },
     { key: 15, label: "Microsoft Azure" },
     { key: 16, label: "Azure DevOps" },
     { key: 17, label: "Git" },
-    { key: 18, label: "Material Design" }
-  ].map(data => {
+  ].map((data) => {
     let icon;
 
     // if (data.label === "React") {

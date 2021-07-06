@@ -8,24 +8,24 @@ import Contact from "./components/Contact";
 import ProfessionalSummary from "./components/ProfessionalSummary";
 import TechnicalSkills from "./components/TechnicalSkills";
 
-const classes = makeStyles(theme => ({
+const classes = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   paper: {
     margin: `${theme.spacing(1)}px auto`,
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
   },
   control: {
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
   },
   chip: {
-    margin: theme.spacing(0.5)
+    margin: theme.spacing(0.5),
   },
   button: {
     flexGrow: 1,
-    margin: 15
-  }
+    margin: 15,
+  },
 }));
 
 export default class App extends React.Component {
@@ -113,7 +113,7 @@ export default class App extends React.Component {
           <div className="container-fluid p-3 p-md-5">
             <hr className="border border-light" style={{ opacity: "0.1" }} />
             <p>
-              Designed and built entirely by{" "}
+              Designed and built by{" "}
               <a href="/">
                 <mark>Eric Rydberg</mark>.
               </a>
@@ -127,8 +127,8 @@ export default class App extends React.Component {
             </p>
             <p>
               Hosted on{" "}
-              <a href="https://azure.microsoft.com" target="_new">
-                Microsoft <mark>Azure</mark> Cloud
+              <a href="https://aws.amazon.com" target="_new">
+                <mark>Amazon Web Services</mark>
               </a>{" "}
               on{" "}
               <a href="https://ubuntu.com/" target="_new">
