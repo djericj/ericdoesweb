@@ -28,8 +28,8 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      New-Item release.txt
-      Set-Content release.txt '$Build.BuildNumber'
+      New-Item build\release.txt
+      Set-Content build\release.txt '$Build.BuildNumber'
     failOnStderr: true
   
 
