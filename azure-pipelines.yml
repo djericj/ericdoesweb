@@ -29,7 +29,7 @@ steps:
     targetType: 'inline'
     script: |
       New-Item build\release.txt
-      Set-Content build\release.txt '$Build.BuildNumber'
+      Set-Content build\release.txt '$(Build.BuildNumber}'
     failOnStderr: true
   
 
