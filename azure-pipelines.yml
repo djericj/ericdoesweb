@@ -16,10 +16,10 @@ steps:
     versionSpec: '14.x'
   displayName: 'Install Node.js'
 
-- script: |
+- script: 
     npm install
-    npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install'
+  workingDirectory: $(directory)
 
 - script: 
     set "REACT_APP_STAGE=$(stage)" && npm run build
