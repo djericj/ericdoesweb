@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Divider, Avatar } from "@material-ui/core";
 
-export const SideNav = props => {
+export const SideNav = (props) => {
   return (
     <div className="">
       <Grid container>
@@ -17,7 +17,7 @@ export const SideNav = props => {
             <h3 className="mt-0">
               Eric <strong>Rydberg</strong>
             </h3>
-            <span className="secondary">Web Developer</span>
+            <span className="secondary">Full stack developer</span>
           </div>
         </div>
       </Grid>
@@ -55,14 +55,14 @@ export const SideNav = props => {
           Contact me
         </a>
         <a
-          href="https://www.dropbox.com/s/k4qrao3tzwousn2/Resume%202019%20Eric%20Rydberg.docx?dl=0"
+          href="https://www.dropbox.com/s/m3nbp7vcr0z64i0/Resume%202021%20Eric%20Rydberg.docx?dl=0"
           target="_new"
           className="list-group-item list-group-item-action"
         >
           Download my resume
         </a>
         <a
-          href="https://www.linkedin.com/in/eric-rydberg-6657043/"
+          href="https://www.linkedin.com/in/eric-r-6657043/"
           target="_new"
           className="list-group-item list-group-item-action"
         >
@@ -77,7 +77,7 @@ export const SideNav = props => {
         <ul className="nav margin-t-10 justify-content-center">
           <li className="nav-item">
             <a
-              href="https://www.linkedin.com/in/eric-rydberg-6657043/"
+              href="https://www.linkedin.com/in/eric-r-6657043/"
               target="_new"
               className="nav-link"
               title="My professional profile on Linked In"

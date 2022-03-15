@@ -5,7 +5,8 @@ const Contact = () => {
     <div className="card-deck">
       <div className="card">
         <a
-          href="https://www.linkedin.com/in/eric-rydberg-6657043/"
+          href="https://www.linkedin.com/in/eric-r-6657043/"
+          target="_new"
           className="stretched-link"
         >
           <img
@@ -21,7 +22,11 @@ const Contact = () => {
         </a>
       </div>
       <div className="card">
-        <a href="https://github.com/djericj" className="stretched-link">
+        <a
+          href="https://github.com/djericj"
+          target="_new"
+          className="stretched-link"
+        >
           <img src="../images/github.png" className="card-img-top" alt="..." />
           <div className="card-body">
             <p className="card-text">
@@ -33,6 +38,7 @@ const Contact = () => {
       <div className="card">
         <a
           href="https://stackoverflow.com/users/10255368/eric-j"
+          target="_new"
           className="stretched-link"
         >
           <img
@@ -44,7 +50,7 @@ const Contact = () => {
               margin: "0 auto",
               position: "absolute",
               left: "12%",
-              top: "10%"
+              top: "10%",
             }}
             alt="..."
           />
@@ -53,7 +59,7 @@ const Contact = () => {
               className="card-text"
               style={{
                 position: "absolute",
-                bottom: "7%"
+                bottom: "7%",
               }}
             >
               Questions, answers and interaction with the developer community.
