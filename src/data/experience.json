@@ -1,14 +1,27 @@
 [
   {
-    "title": "Senior C# Developer",
-    "subtitle": "Code Authority, Inc.",
-    "environment": ".NET Core, Web API, C#, Angular 7, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps, Agile",
-    "from": "Sep 2019",
+    "title": "Senior Software Developer",
+    "subtitle": "Sovereign Sportsman Solutions",
+    "environment": ".NET, Web API, C#, MVC, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps",
+    "from": "Jul 2021",
     "to": "Present",
     "image": "",
     "description": [
       {
-        "item": "Currently working on a large roofing company internal management application built with Angular 7, Web API, OData and Dapper ORM."
+        "item": "Currently working remotely on a large administrative application."
+      }
+    ]
+  },
+  {
+    "title": "Senior C# Developer",
+    "subtitle": "Code Authority, Inc.",
+    "environment": ".NET Core, Web API, C#, Angular 7, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps, Agile",
+    "from": "Sep 2019",
+    "to": "Jul 2021",
+    "image": "",
+    "description": [
+      {
+        "item": "Worked on a large roofing company internal management application built with Angular 7, Web API, OData and Dapper ORM."
       },
       {
         "item": "Setting up and maintaining the Azure infrastructure, including App Services, Azure SQL Databases, Azure Active Directory."
