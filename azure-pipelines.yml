@@ -28,8 +28,9 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      New-Item build\release.txt
-      Set-Content build\release.txt '$(Build.BuildNumber)'
+      Remove-Item build\release.js
+      New-Item build\release.js
+      Set-Content build\release.js const BUILD_NUMBER = "$(Build.BuildNumber)";
     failOnStderr: true
   
 
