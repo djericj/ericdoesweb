@@ -30,7 +30,7 @@ steps:
     script: |
       Remove-Item build\release.js
       New-Item build\release.js
-      Set-Content build\release.js `const BUILD_NUMBER = "$(Build.BuildNumber)";`
+      ForEach-Object {$_ -Replace '${Build.BuildNumber}', '$(Build.BuildNumber)'} | Set-Content -Path build\release.js
     failOnStderr: true
   
 
