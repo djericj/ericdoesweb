@@ -28,8 +28,6 @@ const classes = makeStyles((theme) => ({
   },
 }));
 
-const BUILD_NUMBER = window.app && window.app.env.BUILD_NUMBER;
-
 export default class App extends React.Component {
   render() {
     return (
@@ -138,7 +136,6 @@ export default class App extends React.Component {
               </a>
               .
             </p>
-            <p>Build {BUILD_NUMBER}</p>
           </div>
         </footer>
       </div>
