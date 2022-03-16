@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import "./App.scss";
-import Build from "./components/Build";
 import Experience from "./components/Experience";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
@@ -28,6 +27,8 @@ const classes = makeStyles((theme) => ({
     margin: 15,
   },
 }));
+
+const BUILD_NUMBER = window.app && window.app.env.BUILD_NUMBER;
 
 export default class App extends React.Component {
   render() {
@@ -137,9 +138,7 @@ export default class App extends React.Component {
               </a>
               .
             </p>
-            <p>
-              Build <Build />
-            </p>
+            <p>Build {BUILD_NUMBER}</p>
           </div>
         </footer>
       </div>
