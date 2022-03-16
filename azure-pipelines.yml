@@ -24,15 +24,6 @@ steps:
     set "REACT_APP_STAGE=$(stage)" && npm run build
   displayName: 'npm build'
 
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      New-Item build\release.txt
-      Set-Content build\release.txt '$(Build.BuildNumber)'
-    failOnStderr: true
-  
-
 - task: CopyFiles@2
   displayName: 'Copy files'
   inputs:
