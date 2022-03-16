@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import "./App.scss";
+import Build from "./components/Build";
 import Experience from "./components/Experience";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
@@ -135,6 +136,9 @@ export default class App extends React.Component {
                 <mark>Ubuntu Linux</mark>
               </a>
               .
+            </p>
+            <p>
+              Build <Build />
             </p>
           </div>
         </footer>
