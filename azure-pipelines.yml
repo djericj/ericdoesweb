@@ -24,16 +24,6 @@ steps:
     set "REACT_APP_STAGE=$(stage)" && npm run build
   displayName: 'npm build'
 
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      Remove-Item build\release.js
-      New-Item build\release.js
-      (Get-Content -Path build\release.js) | ForEach-Object {$_ -Replace '${Build.BuildNumber}', '$(Build.BuildNumber)'} | Set-Content -Path build\release.js
-    failOnStderr: true
-  
-
 - task: CopyFiles@2
   displayName: 'Copy files'
   inputs:
