@@ -30,7 +30,7 @@ steps:
     script: |
       Remove-Item build\release.js
       New-Item build\release.js
-      Set-Content build\release.js const BUILD_NUMBER = "$(Build.BuildNumber)";
+      Set-Content build\release.js `const BUILD_NUMBER = "$(Build.BuildNumber)";`
     failOnStderr: true
   
 
