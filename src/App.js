@@ -36,7 +36,7 @@ export default class App extends React.Component {
           <span className="icon float-right">
             <i className="fa fa-commenting fa-3x"></i>
           </span>
-          <h2 id="aboutme">25 years of development, since 1995.</h2>
+          <h2 id="aboutme">25+ years of development, since 1995.</h2>
 
           <AboutMe classes={classes} />
         </section>
