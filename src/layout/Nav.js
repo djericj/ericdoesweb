@@ -55,7 +55,7 @@ export const SideNav = (props) => {
           Contact me
         </a>
         <a
-          href="https://www.dropbox.com/s/m3nbp7vcr0z64i0/Resume%202021%20Eric%20Rydberg.docx?dl=0"
+          href="https://www.dropbox.com/s/fdnh87pjcl6wtud/Resume%202022%20Eric%20Rydberg.docx?dl=0"
           target="_new"
           className="list-group-item list-group-item-action"
         >
