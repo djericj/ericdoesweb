@@ -62,7 +62,7 @@ export const SideNav = (props) => {
           Download my resume
         </a>
         <a
-          href="https://www.linkedin.com/in/eric-r-6657043/"
+          href="https://www.linkedin.com/in/eric-rydberg/"
           target="_new"
           className="list-group-item list-group-item-action"
         >
