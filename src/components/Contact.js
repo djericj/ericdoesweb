@@ -5,7 +5,7 @@ const Contact = () => {
     <div className="card-deck">
       <div className="card">
         <a
-          href="https://www.linkedin.com/in/eric-r-6657043/"
+          href="https://www.linkedin.com/in/eric-rydberg/"
           target="_new"
           className="stretched-link"
         >

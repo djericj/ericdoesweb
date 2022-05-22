@@ -77,7 +77,7 @@ export const SideNav = (props) => {
         <ul className="nav margin-t-10 justify-content-center">
           <li className="nav-item">
             <a
-              href="https://www.linkedin.com/in/eric-r-6657043/"
+              href="https://www.linkedin.com/in/eric-rydberg/"
               target="_new"
               className="nav-link"
               title="My professional profile on Linked In"
