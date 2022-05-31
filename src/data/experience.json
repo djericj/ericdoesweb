@@ -1,7 +1,20 @@
 [
   {
+    "title": "Senior Software Engineer",
+    "subtitle": "SS&C Advent",
+    "environment": ".NET, Web API, C#, MVC, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps",
+    "from": "May 2022",
+    "to": "Present",
+    "image": "",
+    "description": [
+      {
+        "item": "Working remotely on a suite of large financial applications."
+      }
+    ]
+  },
+  {
     "title": "Senior Software Developer",
-    "subtitle": "Sovereign Sportsman Solutions",
+    "subtitle": "S3",
     "environment": ".NET, Web API, C#, MVC, JavaScript, jQuery, Microsoft SQL, Git, Azure DevOps",
     "from": "Jul 2021",
     "to": "Apr 2022",
