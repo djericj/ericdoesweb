@@ -17,7 +17,7 @@
     "json-loader": "^0.5.7",
     "moment": "^2.24.0",
     "node-sass": "^7.0.0",
-    "npm": "^8.5.4",
+    "npm": "^8.11.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",
