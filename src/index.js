@@ -5,11 +5,13 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { SideNav } from "./layout/Nav";
 import TopNav from "./layout/TopNav";
-import { makeStyles } from "@material-ui/core";
+import { ThemeProvider, createTheme, makeStyles } from '@material-ui/core/styles';
+
+const theme = createTheme();
 
 export class Index extends React.Component {
   render() {
-    const classes = makeStyles(theme => ({
+    const classes = makeStyles(() => ({
       avatar: {
         margin: 10,
         backgroundColor: "#fff",
@@ -22,6 +24,7 @@ export class Index extends React.Component {
       }
     }));
     return (
+      <ThemeProvider theme={theme}>
       <div className="row bg-dark">
         <div className="d-md-none d-lg-none w-100">
           <TopNav classes={classes} />
@@ -33,6 +36,7 @@ export class Index extends React.Component {
           <App classes={classes} />
         </div>
       </div>
+      </ThemeProvider>
     );
   }
 }
