@@ -19,7 +19,7 @@ steps:
   displayName: 'npm install'
 
 - script: 
-    set "REACT_APP_STAGE=$(stage)" && npm run build
+    set npm run build
   displayName: 'npm build'
 
 - task: CopyFiles@2
