@@ -11,9 +11,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
+- task: UseNode@1
   inputs:
-    versionSpec: '14.x'
+    version: '11.x'
   displayName: 'Install Node.js'
 
 - script: 
@@ -21,7 +21,7 @@ steps:
   displayName: 'npm install'
 
 - script: 
-    set "REACT_APP_STAGE=$(stage)" && npm run build
+    set npm run build
   displayName: 'npm build'
 
 - task: CopyFiles@2
