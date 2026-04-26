@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^4.3.5"
+    "@types/react-router-dom": "^4.3.5",
+    "jest-worker": "^27.3.1"
   }
 }
