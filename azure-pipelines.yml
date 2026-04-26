@@ -21,7 +21,7 @@ steps:
   displayName: 'npm install'
 
 - script: 
-    set npm run build
+    npm run build
   displayName: 'npm build'
 
 - task: CopyFiles@2
